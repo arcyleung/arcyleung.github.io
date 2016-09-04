@@ -12,6 +12,12 @@
     src: url('../fonts/kana.ttf') format('truetype');
 }
 
+}
+@font-face {
+    font-family: kana;
+    src: url('../fonts/kana2.ttf') format('truetype');
+}
+
 html, body, head {
   overflow-x: hidden;
   padding: 0;
