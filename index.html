@@ -1,308 +1,368 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
-  <link rel="stylesheet" href=
-  "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-  type="text/css" />
-  <link rel="stylesheet" href="css/main.css" type="text/css" />
-  <!-- jQuery library -->
-
-  <script src=
-  "https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"
-  type="text/javascript">
-</script>
-<script type="text/javascript" src=
-"http://d3js.org/d3.v3.min.js">
-</script>
-<script src=
-"https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"
-type="text/javascript">
-</script>
-<script type="text/javascript" src=
-"http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/js/bootstrap.min.js">
-</script><!-- Latest compiled JavaScript -->
-
-<script type="text/javascript" src=
-"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
-</script>
-<script type="text/javascript" src="main.js">
-</script>
-<!-- <script type="text/javascript" src="parallax/parallax.js"></script> -->
-
-<script src="deploy/parallax.min.js" type="text/javascript">
-</script>
-
-<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
-
-<script src="https://apis.google.com/js/platform.js" async=""
-defer="defer" type="text/javascript">
-</script>
-<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=0.5">
+<meta name="mobile-web-app-capable" content="yes">
+<!-- 	<meta content="initial-scale=1" name="viewport"> -->
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<!-- 	<meta content="width=device-width, initial-scale=1" name="viewport"> -->
+	
+	<title>Welcome!</title>
+	<meta content="Source code generated using layoutit.com" name=
+	"description">
+	<meta content="Arthur's home page" name="author">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <div class="head" id="polyhead">
-   <p class="layer headtext" data-depth="1" id="h1"></p>
-   <p class="layer headtext" data-depth="0.50" id="h2">Scroll down to read more!</p>
-   <p class="layer headtext" data-depth="0.85" id="h3">안녕!</p>
-   <p class="layer headtext" data-depth="0.60" id="h4" style="font-face:kana;">こんにちは</p>
-   <p class="layer headtext" data-depth="0.75" id="h5">歡迎</p>
-   <p class="layer headtext" data-depth="0.55" id="h6">¡Hola!</p>
-   <p class="layer headtext" data-depth="0.65" id="h7">Здравствуйте</p>
-   <p class="layer headtext" data-depth="0.85" id="h8"></p>
-   <script type="text/javascript">
-//<![CDATA[
-var date = new Date();
-var hrs = date.getHours();
-var greet = document.getElementById('h1');
-if (hrs < 12) {
-  h1.textContent = "Good Morning!";
-}
-if (hrs >= 12 && hrs < 18) {
-  h1.textContent = "Good Afternoon!";
-}
-if (hrs >= 18 && hrs <= 23) {
-  h1.textContent = "Good Evening!";
-}
-var head = document.getElementById('polyhead');
-var dimensions = head.getClientRects()[0];
-var pattern = Trianglify({
-  width: dimensions.width,
-  height: dimensions.height,
-
-  x_colors: ['#FCF5E3', '#97CFC1', '#45B6CC'],
-  cell_size: 180
-});
-head.style['background-image'] = 'url(' + pattern.png() + ')';
-head.style.opacity = 1;
-head.style.zIndex = -1;
-      //]]>
-   </script>
-</div>
-<section class="site" id="sitenav" class="nav nav-tabs" style="z-index:100;">
- <nav role="navigation">
-   <a href="#About_Me_con" data-target="About_Me">About Me</a>
-   <a href="#Experience_con" data-target=
-   "Experience">Experience</a> <a href="#Portfolio_con"
-   data-target="Portfolio">Portfolio</a> <a href=
-   "#Resources_con" data-target="Resources">Resources</a>
-   <a href="#Contact_Me_con" data-target="Contact_Me">Contact
-      Me</a>
-   </nav>
-</section>
-<div class="bodysections" id="bodysections">
-   <div class="bodysections_bg" id="bodysections_bg"/>
-   <div class="para_container" id="About_Me_con">
-    <div>
-     <div class="para_text1_number">01</div>
-  </div>
-  <div style="margin: auto; max-width: 1200px;">
-     <div>
-      <span class="para_text1_title">\twhoami_</span>
-   </div>
-   <div class="para_text2">
-     <p>
-       "I am a student reading Computer Engineering at the
-       University of Waterloo. Currently I'm interested in
-       developing software with present and emerging
-       technologies, that is supported on a diverse range of
-       platforms and easy to use. Apart from programming I
-       also have some graphics projects on the side, and a
-       bit of design as well, check out my portfolio!"
-    </p>
- </div>
- <div id="gbadge" class="badgecontainer layer" data-depth=
- "0.50">
- <div class="g-person" data-href=
- "https://plus.google.com/u/0/115436414229756294772" data-rel=
- "author" style="z-index:10;"></div>
-</div>
-</div>
-</div>
-<div class="para_container" id="Experience_con">
- <div>
-  <div class="para_text1_number">02</div>
-</div>
-<div style="margin: auto; max-width: 1200px;">
-  <div>
-   <span class="para_text1_title">experience</span>
-</div>
-<div class="para_text2">
-  <ul>
-    <li class="expitem">
-       <input type="checkbox" id="nokia" />
-       <label for="nokia" onclick>Nokia Solutions and Networks
-          (Formerly Nakina Systems)<br>Kanata, Ottawa</label>
-          <p class="exp_desc">
-            Wrote REST APIs as a software designer co-op, to
-            interface with multi-tiered enterprise Java based
-            backend.
-         </p>
-      </li>
-      <li class="expitem">
-       <input type="checkbox" id="sail" />
-       <label for="sail" onclick>Software Analysis and
-          Intelligence Lab (SAIL)<br>Queens University, Kingston</label>
-          <p class="exp_desc">
-            Under the supervision of a PhD student, created a
-            predictive model based on selected metrics in a
-            database of journal papers (Journal of the ACM).
-            <br>
-            <br>
-            <a style="text-align:center;background-color:#93AEA6;color:#5B585A;padding:1px 10px 1px 10px;left:50%" href="https://docs.google.com/presentation/d/1Qf-sOc8bdq_altCKefaCiJdq6KIWF5ulsMmOKIVbpto/edit?usp=sharing">View slideshow</a>
-         </p>
-      </li>
-      <li class="expitem">
-
-       <input type="checkbox" id="med" />
-       <label for="med" style="color:#FFFFFF" onclick>Medical Illustrator</label>
-       <p class="exp_desc">
-         Provided medical illustrations and diagrams for
-         the following papers:<br>
-
-         <a class="paperlink" href=
-         "http://ino.sagepub.com/content/early/2013/12/05/1755738013508548">
-         Leung, L. Guided by numbers - how far should we
-         go? InnovAiT. Dec 9 2013.</a><br />
-         <a class="paperlink" href=
-         "https://www.rnzcgp.org.nz/assets/documents/Publications/JPHC/September-2012/Corrected-JPHC-Vol-4-No-3-September-2012.pdf#page=79">
-         Leung, L. From Ladder to Platform: a new
-         conceptual framework for pain management. J Prim
-         Health Care. 4(3):254-258.</a><br />
-         <a class="paperlink" href=
-         "https://www.researchgate.net/publication/235784247_Neuroimaging_in_Chronic_and_Neuropathic_Pain">
-         Leung, L. Neuroimaging in chronic and neuropathic
-         pain. Int J Pain. 3:1-30 (2012).</a><br />
-         <a class="paperlink" href=
-         "http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3894036/">
-         Leung, L. Hyfrecation for recalcitrant
-         non-genital warts. J Fam Med Pri Care. 2: 141-144
-         (2013).</a><br />
-         <a class="paperlink" href=
-         "http://www.jfmpc.com/article.asp?issn=2249-4863;year=2013;volume=2;issue=1;spage=109;epage=110;aulast=Parks">
-         Parks, K.,Leung, L. Recurrent Hydrocoele. J Fam
-         Med Pri Care. 2:109-10 (2013).</a><br/>
-      </p>
-   </li>
-   <li class="expitem">
-    <label for="srvadmin" onclick>Co-owner/ Server administrator</label>
-    <input type="checkbox" id="srvadmin" />
-    <p class="exp_desc"></p>
- </li>
-</ul>
-</div>
-</div>
-</div>
-<div class="para_container" id="Portfolio_con">
- <div>
-    <div class="para_text1_number">
-       03</div>
+<div>
+	<nav id="custom-bootstrap-menu" class="navbar navbar-default navbar-fixed-top" id="nav" role=
+	"navigation" style="font-size: 150%">
+	<div class="navbar-header">
+		<button class="navbar-toggle" data-target=
+		"#bs-example-navbar-collapse-1" data-toggle="collapse" type=
+		"button"><span class="sr-only">Toggle navigation</span><span class=
+		"icon-bar"></span><span class="icon-bar"></span><span class=
+		"icon-bar"></span></button> <a class="navbar-brand" href="#"></a>
+	</div>
+	<div class="collapse navbar-collapse "id=
+	"bs-example-navbar-collapse-1">
+	<ul class="nav navbar-nav">
+		<li class="">
+			<a href="#about_me">About Me</a>
+		</li>
+		<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href=
+			"#">Experience<strong class="caret"></strong></a>
+			<ul class="dropdown-menu">
+				<li>
+					<a data-target="#USG" href="#experience">Ultimate
+						Software Group Inc.</a>
+					</li>
+					<li>
+						<a data-target="#NSN" href="#experience">Nokia
+							Solutions and Networks</a>
+						</li>
+						<li>
+							<a data-target="#QUIC" href="#experience">Queen's University</a>
+						</li>
+					</ul>
+				</li>
+				<li class="">
+					<a href="#development">Development</a>
+				</li>
+				<li class="">
+					<a href="#contact_me">Contact Me</a>
+				</li>
+            </ul><!-- <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control">
+            </div> 
+            <button type="submit" class="btn btn-default">
+              Submit
+            </button>
+        </form> -->
+        <ul class="nav navbar-nav navbar-right" style="padding-right: 2rem">
+        	<li>
+        		<a href="https://github.com/pspkazy?tab=repositories">Github</a>
+        	</li>
+        </ul>
     </div>
-    <div style="margin: auto;max-width:1200px;">
-
-      <div>
-       <span class="para_text1_title">
-          portfolio</span>
-       </div>
-       <div class="para_text2">
-         <p>
-           Some of my work and projects
-        </p>
-        <ul>
-        <li>
-        <input type="checkbox" id="torrent" />
-        <label for="torrent" onclick>BitTorrent network usage statistical analysis</label>
-        <p class="exp_desc">Studied usage and types of files shared over the BitTorrent protocol with data sampled from the Openbay initiative database (2015), containing torrent metadata from the top trackers at the time of study (ThePirateBay, KickassTorrents, BitSnoop etc...) Data is imported into R for noise reduction and correlation identification, then visualized with various built in and external libraries (see Slideshow)
-          <br>
-          <a class="paperlink" href=
-          "https://drive.google.com/open?id=0B9FWN2-4d63fdUtJR1A0N0lQUzA">
-          Collaborative Study: Statistical analysis of BitTorrent protocol traffic and usage (2015)</a><br>
-          <a style="text-align:center;background-color:#93AEA6;color:#5B585A;padding:1px 10px 1px 10px;left:50%" class="paperlink" href=
-          "https://docs.google.com/presentation/d/1orJa2TMC1GG73RjxPm1AaWflSHJbwrv_eJU0REQ0yRg/edit?usp=sharing">
-          View Slideshow</a>          
-       </p>
-       </li>
-       <li>
-       <input type="checkbox" id="github" />
-       <label for="github" onclick>Github projects</label>
-       <p class="exp_desc">
-          <a class="paperlink" href=
-          "https://github.com/pspkazy/MoBooru">
-          Android RedditBooru browser/ imageboard viewer</a><br>
-          <a class="paperlink" href=
-          "https://github.com/pspkazy/IPcam-Viewer">
-          IP camera viewer client</a><br>
-          <a class="paperlink" href=
-          "https://github.com/xNovax/Multiplication_Dungeon">
-          School team programming project: 2D dungeon crawler game</a>     
-       </p>
-       </li>
-       </ul>
-    </div>
- </div>
+</nav>
 </div>
-<div class="para_container" id="Resources_con">
- <div>
-    <div class="para_text1_number">
-       04</div>
-    </div>
-    <div style="margin: auto;max-width:1200px;">
+<div class="container-fluid parallax">
 
-      <div>
-       <span class="para_text1_title">
-          resources</span>
-       </div>
-       <div class="para_text2">
-         <p>
-           Stuff that might be useful
-        </p>
-     </div>
-  </div>
-</div>
-<div class="para_container" id="Contact_Me_con">
- <div>
-    <div class="para_text1_number">
-       05</div>
-    </div>
-    <div style="margin: auto;max-width:1200px;">
+	<div class="row parallax__group" id="about_me">
 
-      <div>
-       <span class="para_text1_title">
-          contact me</span>
-       </div>
-       <div class="para_text2">
-         <p>
 
-         </p>
-      </div>
-   </div>
-</div>
-</div><script type="text/javascript">
+		<div class="parallax__layer parallax__layer--base">
+			<div class="bg_1"></div>
+		</div>
+		<div class="parallax__layer parallax__layer--deep2">
+								<div class="lbox">
+				<div id="block1" style="bottom: 0vh; position: absolute; font-size: 26vw; font-family: 'GeogrotesqueSlW04-ASmBold'; color: rgba(0,0,0,0.3); text-shadow: rgba(0,0,0,0.3) 0 0 10px;">
+								01
+							</div>
+							</div>
+		</div>
+		<div class="parallax__layer parallax__layer--fore">
+			<div class="col-md-12">
+				<div class="jumbotron" style="color: #FFFFFF">
+					<div class="centering_wrapper_right">
+						<h2>Hi, my name is <mark style=
+							"color:#CEE7D4; background-color:#000000;">Arthur</mark></h2>
+							<p></p>
+							<p><a class="btn btn-primary btn-large" href=
+								"#">Learn more</a></p>
+							</div>
+							
+						</div>
+					</div>
+				</div>
 
-        var colors = ["#F5F5F5","#FCF5E3","#97CFC1","#45B6CC","#383636"];
-        var el = document.getElementById("bodysections_bg");
-        var dimensions = el.getClientRects()[0];
-        var pattern = Trianglify({
-           width: dimensions.width,
-           height: dimensions.height*1.5,
-           x_colors: ['#F5F5F5', '#5B585A'],
-           y_colors: ["#F5F5F5","#FCF5E3","#97CFC1","#45B6CC","#383636"],
-           cell_size: 180
-        });
-        el.style['background-image'] = 'url(' + pattern.png() + ')';
-        el.style.opacity = 1;
-        el.style.zIndex = -1;
+				<div class="parallax__layer parallax__layer--fore">
+					<div class="seperator_1"></div>
+				</div>
 
-   </script> <script type="text/javascript">
-var head = document.getElementById('polyhead');
-var badge = document.getElementById('gbadge');
-var parallaxh = new Parallax(head);
-var parallax = new Parallax(badge);
-   </script> <script src=
-   "https://apis.google.com/js/platform.js" async="" defer=
-   "defer" type="text/javascript">
-</script>
+			</div>
+			<div class="row parallax__group" id="experience">
+			<div class="parallax__layer--fore" id="block2" style="top: 40vh; position: relative; font-size: 50rem; font-family: 'GeogrotesqueSlW04-ASmBold'; color: #FFFFFF; text-shadow: rgba(255,255,255,1) 0 0 10px;">
+								02
+							</div>
+				<div class="parallax__layer parallax__layer--base">
+					<div class="bg_2"></div>
+				</div>
+				<div class="parallax__layer parallax__layer--fore">
+					<div class="centering_wrapper_left">
+						<div class="col-md-6" style=
+						"background-color: rgba(72,67,74,.9); padding: 20px 10px 20px 10px; overflow: hidden; border-radius: 5px;">
+						<table class="table table-condensed" style=
+						"color: #CEE7D4;">
+						<thead>
+							<tr>
+								<th>Technologies</th>
+							</tr>
+						</thead>
+						<tbody style="font-size: 1.5rem; max-width: 100%">
+							<tr>
+								<td>Java SE/EE</td>
+							</tr>
+							<tr>
+								<td>HTML/CSS/JS</td>
+							</tr>
+							<tr>
+								<td>Python</td>
+							</tr>
+							<tr>
+								<td>HTML/CSS/JS</td>
+							</tr>
+							<tr>
+								<td>R Project</td>
+							</tr>
+							<tr>
+								<td>Android SDK</td>
+							</tr>
+							<tr>
+								<td>SQL(ite)</td>
+							</tr>
+							<tr>
+								<td>Git/SVN</td>
+							</tr>
+							<tr>
+								<td>JIRA/Jenkins/TeamCity</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-md-6">
+					<div class="panel-group" id="accordion">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+										Ultimate Software Group
+										Inc.
+									</a>
+								</h4>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse in">
+								<img align="right" class="company_logo"
+								height="75" src=
+								"/img/ultimatesoftware_logo.jpg" width=
+								"75">
+								<div class="panel-body">
+									A SaaS company from Florida, that
+									specializes in software for other
+									companies to manage their employees
+									effectively, through their flagship
+									product UltiPro.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+										Nokia Solutions and
+										Networks (Former Nakina Systems)
+									</a>
+								</h4>
+							</div>
+							<div id="collapseTwo" class="panel-collapse collapse">
+								<img align="right" class="company_logo"
+								height="75" src="/img/nokia_logo.png"
+								width="75">
+								<div class="panel-body">
+									Formerly a telecomms and physical/
+									virtual network management and security
+									business, now a part of Nokia to expand
+									into the global networking market.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+										Software Analysis and
+										Intelligence Lab (SAIL)
+									</a>
+								</h4>
+							</div>
+							<div id="collapseThree" class="panel-collapse collapse">
+								<img align="right" class="company_logo"
+								height="75" src="/img/queens_logo.png"
+								width="75">
+								<div class="panel-body">
+									Leading software engineering research
+									team of Queen's University; producing
+									quality publications that span multiple
+									fields including data mining, software
+									architecture and distributed systems,
+									and machine learning.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row parallax__group" id="development">
+<div class="parallax__layer parallax__layer-deep">
+<div id="block3" style="top: 10vh; position: absolute; font-size: 50rem; font-family: 'GeogrotesqueSlW04-ASmBold'; color: #FFFFFF; text-shadow: rgba(255,255,255,1) 0 0 10px;">
+								03
+							</div>
+							</div>
+		<div class="parallax__layer parallax__layer--back">
+			<div class="bg_5"></div>
+		</div>
+		<div class="parallax__layer parallax__layer--fore">
+			<div class="bg_3"></div>
+		</div>
+				
+		<div class="parallax__layer parallax__layer--fore">
+			<div class="container_carousel centering_wrapper">
+				<div class="carousel slide carousel-fade" data-ride=
+				"carousel" id="carousel">
+				<ol class="carousel-indicators">
+					<li class="active" data-slide-to="0" data-target=
+					"#carousel"></li>
+					<li data-slide-to="1" data-target="#carousel"></li>
+					<li data-slide-to="2" data-target="#carousel"></li>
+				</ol><!-- Carousel items -->
+				<div class="carousel-inner carousel-zoom">
+					<div class="active item">
+						<a href="https://drive.google.com/open?id=0B9FWN2-4d63fdUtJR1A0N0lQUzA">
+							<img class="img-responsive" src=
+							"/img/torrentstudy.png">
+						</a>
+						<div class="carousel-caption">
+							<h2>Bittorrent filesharing statistics study</h2>
+							<p>A statistical study on metadata from a dataset of more than 15 million torrents</p>
+						</div>
+					</div>
+					<div class="item">
+						<a href="https://github.com/pspkazy/MoBooru">
+							<img class="img-responsive" src=
+							"/img/mobooru.png">
+						</a>
+						<div class="carousel-caption">
+							<h2>Mobooru</h2>
+							<p>A mobile imageboard reader for
+								android</p>
+							</div>
+						</div>
+
+						<div class="item">
+							<a href="https://devpost.com/software/uwglass?ref_content=contribution-prompt&ref_feature=engagement&ref_medium=email&utm_campaign=contribution-prompt&utm_content=contribution_reminder&utm_medium=email&utm_source=transactional#app-team">
+								<img class="img-responsive" src=
+								"/img/uwglass.png">
+							</a>
+							<div class="carousel-caption">
+								<h2>UWGlass</h2>
+								<p>An EngHack 2015 contest entry, allowing students to leave reviews for co-op employers</p>
+							</div>
+						</div>
+
+					</div><!-- Carousel nav -->
+					<a class="carousel-control left" data-slide="prev"
+					href="#carousel">‹</a> <a class=
+					"carousel-control right" data-slide="next" href=
+					"#carousel">›</a>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<div class="row parallax__group" id="contact_me">
+		<div class="parallax__layer parallax__layer--base">
+			<div class="bg_4"></div>
+		</div>
+		<div class="parallax__layer parallax__layer--fore">
+			<div class="centering_wrapper_left">
+				<div class="col-md-4">
+					<p>Lorem ipsum dolor sit amet, <strong>consectetur
+						adipiscing elit</strong>. Aliquam eget sapien sapien.
+						Curabitur in metus urna. In hac habitasse platea
+						dictumst. Phasellus eu sem sapien, sed vestibulum
+						velit. Nam purus nibh, lacinia non faucibus et,
+						pharetra in dolor. Sed iaculis posuere diam ut cursus.
+						<em>Morbi commodo sodales nisi id sodales. Proin
+							consectetur, nisi id commodo imperdiet, metus nunc
+							consequat lectus, id bibendum diam velit et dui.</em>
+							Proin massa magna, vulputate nec bibendum nec, posuere
+							nec lacus. <small>Aliquam mi erat, aliquam vel luctus
+							eu, pharetra quis elit. Nulla euismod ultrices massa,
+							et feugiat ipsum consequat eu.</small></p>
+						</div>
+						<div class="col-md-4">
+							<p>Lorem ipsum dolor sit amet, <strong>consectetur
+								adipiscing elit</strong>. Aliquam eget sapien sapien.
+								Curabitur in metus urna. In hac habitasse platea
+								dictumst. Phasellus eu sem sapien, sed vestibulum
+								velit. Nam purus nibh, lacinia non faucibus et,
+								pharetra in dolor. Sed iaculis posuere diam ut cursus.
+								<em>Morbi commodo sodales nisi id sodales. Proin
+									consectetur, nisi id commodo imperdiet, metus nunc
+									consequat lectus, id bibendum diam velit et dui.</em>
+									Proin massa magna, vulputate nec bibendum nec, posuere
+									nec lacus. <small>Aliquam mi erat, aliquam vel luctus
+									eu, pharetra quis elit. Nulla euismod ultrices massa,
+									et feugiat ipsum consequat eu.</small></p>
+								</div>
+								<div class="col-md-4">
+									<address>
+										<strong>Arthur Leung</strong><br>
+										ac7leung@uwaterloo.ca<br>
+										Waterloo, ON N2L 3G5<br>
+										<abbr title="Phone">Cell:</abbr> +1 (343) 363-1835
+									</address>
+								</div>
+							</div>
+						</div>
+					</div>
+					<script src="js/jquery.min.js">
+					</script> 
+					<script src="js/bootstrap.min.js">
+					</script> 
+					<script src="js/scripts.js">
+					</script> 
+					<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js">
+					</script> 
+
+					<!-- <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script> -->
+         <!-- <script>
+    window.sr = ScrollReveal({ container: document.getElementById('main'), reset: true, origin: 'left', easing: 'ease-in-out', duration: 400,
+        delay: 0, 
+        viewOffset: { top: 40, right: 0, bottom: 0, left: 20 }, viewFactor: 1,
+    });
+    sr.reveal('.col-md-4');
+    sr.reveal('.col-md-6', {origin: 'right'});
+
+</script> -->
 </div>
 </body>
 </html>
