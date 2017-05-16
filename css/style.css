@@ -267,10 +267,17 @@
   }*/
 
 #block3 {
-    z-index: 6!important; /* slide over group 2 and 4 */
+    z-index: 0!important; /* slide over group 2 and 4 */
   }
   #block3 .parallax__layer--deep {
     background: rgb(153,216,101);
+  }
+
+    #block4 {
+    z-index: 10!important; /* slide over group 2 */
+  }
+  #block4 .parallax__layer--fore {
+    background: rgb(102,204,102);
   }
 
   #group4 {
