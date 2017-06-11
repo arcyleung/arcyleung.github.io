@@ -353,7 +353,7 @@ left: 40%;
   	left: 50%;
   	transform: translate(-50%, -50%);
   	align-items: center;
-  	min-width: 900px;
+  	min-width: 500px;
   }
 
   .container-fluid{
