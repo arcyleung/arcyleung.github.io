@@ -8,6 +8,8 @@ $(window).scroll(function(e){
     parallax();
 });
 
+window.scrollTo(0,1);
+
 
 $(document).ready(function () {
   var trigger = $('.hamburger'),
