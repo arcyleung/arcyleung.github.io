@@ -772,6 +772,7 @@ h2 span {
   width: @width1;
   li {
     display: inline-block;
+    font-size: 1.5em;
     line-height: 20px;
     position: absolute;
     width: @full-width;
