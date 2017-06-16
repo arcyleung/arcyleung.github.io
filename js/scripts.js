@@ -11,9 +11,12 @@ $(window).scroll(function(e){
 window.scrollTo(0,1);
 
 
+
 $(document).ready(function () {
   var trigger = $('.hamburger'),
       overlay = $('.overlay'),
+      side = $('.lbox'),
+      back = $('.back'),
      isClosed = false;
 
     trigger.click(function () {
@@ -26,11 +29,15 @@ $(document).ready(function () {
         overlay.hide();
         trigger.removeClass('is-open');
         trigger.addClass('is-closed');
+        side.removeClass('blur');
+        back.removeClass('blur');
         isClosed = false;
       } else {   
         overlay.show();
         trigger.removeClass('is-closed');
         trigger.addClass('is-open');
+        side.addClass('blur');
+        back.addClass('blur');
         isClosed = true;
       }
   }
