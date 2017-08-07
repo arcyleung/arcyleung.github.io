@@ -62,12 +62,10 @@ $(document).ready(function () {
     });
 
     $('.sectionLink').click(function() {
-        console.log('SectionLink pressed');
         var target = $(this).attr('href');
         $('.parallax').animate({
             scrollTop: $(target).offset().top + $('.parallax').scrollTop()
         },  800, 'easeInOutCirc');
-        // $('#wrapper').toggleClass('toggled');
         return false;
     });
 });

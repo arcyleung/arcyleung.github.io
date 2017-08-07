@@ -161,17 +161,6 @@ box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.75);
   	font-size:200%;
   }
 
-  .parallax {
-  	-ms-overflow-style: none;  // IE 10+
-  	overflow: -moz-scrollbars-none;  // Firefox
-  	margin-right: -14px !important;
-  	overflow-y: scroll;
-  	overflow-x: hidden;
-  }
-  .parallax::-webkit-scrollbar { 
-  	display: none;  // Safari and Chrome
-
-  }
 
 
   /* centre the content in the parallax layers */
@@ -334,7 +323,7 @@ img {
   margin-bottom:2vw; 
   border-radius:5px;
   padding : 1em;
-  background-color:rgba(255,255,255,0.75);
+  background-color:rgba(255,255,255,1);
 }
 
 .contactAddress{
