@@ -164,7 +164,6 @@ box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.75);
   	overflow-y: scroll;
   	overflow-x: hidden;
   }
-
   .parallax::-webkit-scrollbar { 
   	display: none;
 
@@ -800,112 +799,7 @@ h2 span {
 }
 
 
-/*-------------------------------*/
-/*     Sidebar nav styles        */
-/*-------------------------------*/
 
-.sidebar-nav {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 0;
-  width: @width1;
-  li {
-    display: inline-block;
-    font-size: 1.5em;
-    line-height: 20px;
-    position: absolute;
-    width: @full-width;
-    &:before {
-      background-color: #1c1c1c;
-      content: '';
-      height: @full-height;
-      left: 0;
-      position: absolute;
-      top: 0;
-      transition: width .2s ease-in;
-      width: 3px;
-      z-index: 1000!important;
-    }
-    &:first-child {
-      a {
-        background-color: @side-color-1;
-        color: #ffffff;
-      }
-    }
-    &:nth-child(2) {
-      &:before {
-        background-color: @side-color-2;
-      }
-    }
-    &:nth-child(3) {
-      &:before {
-        background-color: @side-color-3;
-      }
-    }
-    &:nth-child(4) {
-      &:before {
-        background-color: @side-color-4;
-      }
-    }
-    &:nth-child(5) {
-      &:before {
-        background-color: @side-color-5;
-      }
-    }
-    &:nth-child(6) {
-      &:before {
-        background-color: @side-color-6;
-      }
-    }
-    &:nth-child(7) {
-      &:before {
-        background-color: @side-color-7;
-      }
-    }
-    &:nth-child(8) {
-      &:before {
-        background-color: @side-color-8;
-      }
-    }
-    &:nth-child(9) {
-      &:before {
-        background-color: @side-color-9;
-      }
-    }
-    &:hover {
-      &:before {
-        transition: width .2s ease-in;
-        width: @full-width;
-      }
-    }
-    a {
-      color: #dddddd;
-      display: block;
-      padding: 10px 15px 10px 30px;
-      text-decoration: none;
-    }
-  }
-  li.open {
-    &:hover {
-      before {
-        transition: width .2s ease-in;
-        width: @full-width;
-      }
-    }
-  }
-  .dropdown-menu {
-    background-color: #222222;
-    border-radius: 0;
-    border: none;
-    box-shadow: none;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    width: @full-width;
-  }
-}
 .sidebar-nav li a:hover, .sidebar-nav li a:active, .sidebar-nav li a:focus, .sidebar-nav li.open a:hover, .sidebar-nav li.open a:active, .sidebar-nav li.open a:focus {
   background-color: transparent;
   color: #ffffff;
