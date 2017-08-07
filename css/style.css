@@ -14,9 +14,9 @@
 	text-shadow: black 0.3em 0.3em 0.3em;
 	text-shadow: #444 0 1px 1px;
 	background:transparent;
-	-webkit-transition: all .001s;
-	-moz-transition: all .001s;
-	transition: all .001s;
+	-webkit-transition: all .000.5s;
+	-moz-transition: all .000.5s;
+	transition: all .000.5s;
 	-webkit-transform: translateZ(0);
 	line-height:2.5rem;
 }
@@ -27,7 +27,7 @@
 }
 
 .bg_1 {
-	background: url(../img/clock.jpg) no-repeat center center;
+	background: url(../img/macross.jpg) no-repeat center center;
 	position: fixed;
 	width: 100%;
 	height: 100vh; /*same height as jumbotron */
@@ -36,7 +36,7 @@
 }
 
 .bg_2 {
-	background: url(../img/macross.jpg) no-repeat center center;
+	background: url(../img/clock.jpg) no-repeat center center;
 	position: fixed;
 	width: 100%;
 	height: 100vh; /*same height as jumbotron */
@@ -75,10 +75,10 @@ box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.75);
 	z-index: 0 !important;
 }
 
-.seperator_1{
+.separator_1{
 	background-color: rgba(38,38,38,1);
 	width:100vw;
-	height: 41vh;
+	height: 42.9vh;
 	position: relative;
 	top:100vh;
 }
@@ -112,25 +112,25 @@ box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.75);
 .parallax__layer--fore {
 	-webkit-transform: translateZ(90px) scale(.7);
 	transform: translateZ(90px) scale(.7);
-	z-index: 1;
+	z-index: 3;
 }
 
 .parallax__layer--base {
 	-webkit-transform: translateZ(0);
 	transform: translateZ(0);
-	z-index: 4;
+	z-index: 6;
 }
 
 .parallax__layer--back {
 	-webkit-transform: translateZ(-300px) scale(2.01);
 	transform: translateZ(-300px) scale(2.01);
-	z-index: 3;
+	z-index: 5;
 }
 
 .parallax__layer--deep {
 	-webkit-transform: translateZ(-600px) scale(3);
 	transform: translateZ(-600px) scale(3);
-	z-index: 2;
+	z-index: 4;
 }
 
 .parallax__layer--deep2 {
@@ -166,7 +166,7 @@ box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.75);
   	overflow: -moz-scrollbars-none;  // Firefox
   	margin-right: -14px !important;
   	overflow-y: scroll;
-  	overflow-x: visible;
+  	overflow-x: hidden;
   }
   .parallax::-webkit-scrollbar { 
   	display: none;  // Safari and Chrome
@@ -256,7 +256,7 @@ box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.75);
   }
 
   #block2 {
-    overflow-x: auto;
+    overflow-x: hidden;
     overflow-y: auto;
   	z-index: 0; /* slide over group 2 and 4 */
   }
@@ -340,11 +340,11 @@ left: 40%;
   .centering_wrapper_right {
   	position: absolute;
   	top: 50%;
-  	left: 70%;
+  	left: 60%;
   	transform: translate(-50%, -50%);
   	align-items: center;
-  	width: 66vw;
-    overflow: hidden;
+    width: 70vw;
+    overflow: visible;
   }
 
   .centering_wrapper_left {
@@ -352,8 +352,10 @@ left: 40%;
   	top: 50%;
   	left: 50%;
   	transform: translate(-50%, -50%);
+    flex-flow: row nowrap;
   	align-items: center;
-  	min-width: 400px;
+      	width: 85vw;
+  	min-width: 300px;
   }
 
   .container-fluid{
@@ -367,7 +369,7 @@ left: 40%;
   .lbox{
     position: relative;
     top: 0vh;
-    width: 30vw;
+    width: 20vw;
     left: 0vw;
     height: 100vh;
     background-color: rgba(38,38,38,1);
@@ -375,6 +377,24 @@ left: 40%;
     -webkit-box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.75);
 box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.75);
+  }
+
+    .lbox.blur{
+      filter: blur(5px);
+      transition: 0.5s filter cubic-bezier(0.73, 1, 0.28, 0.08);
+-webkit-transition: 0.5s -webkit-filter cubic-bezier(0.73, 1, 0.28, 0.08);
+-moz-transition: 0.5s -moz-filter cubic-bezier(0.73, 1, 0.28, 0.08);
+-ms-transition: 0.5s -ms-filter cubic-bezier(0.73, 1, 0.28, 0.08);
+-o-transition: 0.5s -o-filter cubic-bezier(0.73, 1, 0.28, 0.08);
+  }
+
+      .back.blur{
+      filter: blur(5px);
+      transition: 0.5s filter cubic-bezier(0.73, 1, 0.28, 0.08);
+-webkit-transition: 0.5s -webkit-filter cubic-bezier(0.73, 1, 0.28, 0.08);
+-moz-transition: 0.5s -moz-filter cubic-bezier(0.73, 1, 0.28, 0.08);
+-ms-transition: 0.5s -ms-filter cubic-bezier(0.73, 1, 0.28, 0.08);
+-o-transition: 0.5s -o-filter cubic-bezier(0.73, 1, 0.28, 0.08);
   }
 
   /*----------------------------------------------*/
@@ -443,6 +463,21 @@ now override the 3.3 new styles for modern browsers & apply opacity
     url("../fonts/Geogrotesque Sl W04 C Medium.ttf") format("truetype"),
     url("../fonts/Geogrotesque Sl W04 C Medium.svg#GeogrotesqueSlW04-CMedium") format("svg");
 }
+
+@font-face {font-family: "RakerStencilBold";
+    src: url("../fonts/Raker Stencil Bold.eot");
+    src: url("../fonts/Raker Stencil Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Raker Stencil Bold.woff2") format("woff2"),
+    url("../fonts/Raker Stencil Bold.woff") format("woff"),
+    url("../fonts/Raker Stencil Bold.ttf") format("truetype"),
+    url("../fonts/Raker Stencil Bold.svg#RakerStencilBold") format("svg");
+}
+
+@font-face {
+  font-family: "GruppeStencil";
+    src: url("../fonts/Gruppe S.ttf") format("truetype");
+}
+
 /*@import url("../fonts/Geogrotesque Sl W04 C Medium.ttf");
 @font-face {
   font-family: "GeogrotesqueSlW04-ASmBold";
@@ -460,6 +495,13 @@ now override the 3.3 new styles for modern browsers & apply opacity
 .panel-heading .accordion-toggle.collapsed:after {
     /* symbol for "collapsed" panels */
     content: "\2b";    /* adjust as needed, taken from bootstrap.css */
+}
+.panel-body {
+  font-size: 1em;
+}
+
+object {
+  width: 100%;
 }
 /*
 {
@@ -519,7 +561,7 @@ h2 span {
   padding-left: 30vw;
 }
 #wrapper.toggled #sidebar-wrapper {
-  width: 30vw;
+  width: 20vw;
 }
 #wrapper.toggled #page-content-wrapper {
   margin-right: -30vw;
@@ -529,7 +571,7 @@ h2 span {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
-  background: #1a1a1a;
+  background: rgba(0,0,0,0.85);
   height: 100%;
   left: 30vw;
   margin-left: -30vw;
@@ -558,6 +600,8 @@ h2 span {
   width: 30vw;
 }
 .sidebar-nav li {
+  font-family: 'GeogrotesqueSlW04-CMedium';
+  font-size: 3em;
   display: inline-block;
   line-height: 10vh;
   position: relative;

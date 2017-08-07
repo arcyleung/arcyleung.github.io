@@ -11,9 +11,13 @@ $(window).scroll(function(e){
 window.scrollTo(0,1);
 
 
+
 $(document).ready(function () {
   var trigger = $('.hamburger'),
       overlay = $('.overlay'),
+      side = $('.lbox'),
+      back = $('.back'),
+      section= $('.sectionLink'),
      isClosed = false;
 
     trigger.click(function () {
@@ -26,11 +30,15 @@ $(document).ready(function () {
         overlay.hide();
         trigger.removeClass('is-open');
         trigger.addClass('is-closed');
+        side.removeClass('blur');
+        back.removeClass('blur');
         isClosed = false;
       } else {   
         overlay.show();
         trigger.removeClass('is-closed');
         trigger.addClass('is-open');
+        side.addClass('blur');
+        back.addClass('blur');
         isClosed = true;
       }
   }
@@ -50,6 +58,16 @@ $(document).ready(function () {
         },  800, 'easeInOutCirc');
         $('#wrapper').toggleClass('toggled');
         hamburger_cross();
+        return false;
+    });
+
+    $('.sectionLink').click(function() {
+        console.log('SectionLink pressed');
+        var target = $(this).attr('href');
+        $('.parallax').animate({
+            scrollTop: $(target).offset().top + $('.parallax').scrollTop()
+        },  800, 'easeInOutCirc');
+        // $('#wrapper').toggleClass('toggled');
         return false;
     });
 });
