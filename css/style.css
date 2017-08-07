@@ -1,3 +1,7 @@
+# Empty CSS file for your own CSS
+
+
+
 .row {
 	max-width: 100px;
 	min-height: 100vh;
@@ -158,14 +162,14 @@ box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.75);
   }
 
   .parallax {
-  	-ms-overflow-style: none;
-  	overflow: -moz-scrollbars-none;
+  	-ms-overflow-style: none;  // IE 10+
+  	overflow: -moz-scrollbars-none;  // Firefox
   	margin-right: -14px !important;
   	overflow-y: scroll;
   	overflow-x: hidden;
   }
   .parallax::-webkit-scrollbar { 
-  	display: none;
+  	display: none;  // Safari and Chrome
 
   }
 
@@ -316,6 +320,24 @@ img {
   vertical-align: middle;
   border: 0;
   -ms-interpolation-mode: bicubic;
+}
+
+.sectionLink{
+  width:5vh;
+  height:5vh;
+}
+
+.contactLink{
+  height: 10vh;
+  width: 10vh; 
+  margin-right:2vw; 
+  margin-bottom:2vw; 
+  border-radius:5px;
+  padding : 1em;
+  background-color:rgba(255,255,255,0.75);
+}
+
+.contactAddress{
 }
 
 .carousel-caption {
@@ -797,8 +819,6 @@ h2 span {
   display: block;
   opacity: 1;
 }
-
-
 
 .sidebar-nav li a:hover, .sidebar-nav li a:active, .sidebar-nav li a:focus, .sidebar-nav li.open a:hover, .sidebar-nav li.open a:active, .sidebar-nav li.open a:focus {
   background-color: transparent;
