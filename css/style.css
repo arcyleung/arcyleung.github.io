@@ -1,7 +1,3 @@
-# Empty CSS file for your own CSS
-
-
-
 .row {
 	max-width: 100px;
 	min-height: 100vh;
@@ -162,14 +158,15 @@ box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.75);
   }
 
   .parallax {
-  	-ms-overflow-style: none;  // IE 10+
-  	overflow: -moz-scrollbars-none;  // Firefox
+  	-ms-overflow-style: none;
+  	overflow: -moz-scrollbars-none;
   	margin-right: -14px !important;
   	overflow-y: scroll;
   	overflow-x: hidden;
   }
+
   .parallax::-webkit-scrollbar { 
-  	display: none;  // Safari and Chrome
+  	display: none;
 
   }
 
