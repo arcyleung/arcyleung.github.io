@@ -6,11 +6,8 @@ function parallax(){
 
 $(window).scroll(function(e){
     parallax();
+    console.log("Scrolled");
 });
-
-window.scrollTo(0,1);
-
-
 
 $(document).ready(function () {
   var trigger = $('.hamburger'),
@@ -30,15 +27,15 @@ $(document).ready(function () {
         overlay.hide();
         trigger.removeClass('is-open');
         trigger.addClass('is-closed');
-        side.removeClass('blur');
-        back.removeClass('blur');
+        side.removeClass('dim');
+        back.removeClass('dim');
         isClosed = false;
       } else {   
         overlay.show();
         trigger.removeClass('is-closed');
         trigger.addClass('is-open');
-        side.addClass('blur');
-        back.addClass('blur');
+        side.addClass('dim');
+        back.addClass('dim');
         isClosed = true;
       }
   }
@@ -68,4 +65,35 @@ $(document).ready(function () {
         },  800, 'easeInOutCirc');
         return false;
     });
+
+    console.log('test');
+    var elem = document.getElementById("wrapper");
+    if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+    }
+});
+
+function toggleFullScreen() {
+    if ((document.fullScreenElement && document.fullScreenElement !== null) || // alternative standard method  
+    (!document.mozFullScreen && !document.webkitIsFullScreen)) { // current working methods  
+        if (document.documentElement.requestFullScreen) {
+            document.documentElement.requestFullScreen();
+        } else if (document.documentElement.mozRequestFullScreen) {
+            document.documentElement.mozRequestFullScreen();
+        } else if (document.documentElement.webkitRequestFullScreen) {
+            document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+        }
+    } else {
+        if (document.cancelFullScreen) {
+            document.cancelFullScreen();
+        } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+        } else if (document.webkitCancelFullScreen) {
+            document.webkitCancelFullScreen();
+        }
+    }
+}
+
+$("jumbotron").click(function() {
+    toggleFullScreen();
 });
