@@ -1,347 +1,360 @@
 <!DOCTYPE html>
-<html lang="en">
-   <head>
-      <meta content="width=device-width, initial-scale=1" name="viewport">
-      <meta content="yes" name="mobile-web-app-capable">
-      <meta content="initial-scale=1" name="viewport">
-      <meta charset="utf-8">
-      <meta content="IE=edge" http-equiv="X-UA-Compatible">
-      <title>Welcome!</title>
-      <meta content="Source code generated using layoutit.com" name="description">
-      <meta content="Arthur's home page" name="author">
-      <link href="css/bootstrap.css" rel="stylesheet">
-      <link href="css/style.css" rel="stylesheet">
-      <meta name=”viewport” content=”width=device-width, user-scalable=0, minimal-ui”>
-   </head>
-   <body>
-      <div id="wrapper">
-         <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-            <ul class="nav sidebar-nav">
-               <li>
-                  <div style=" display: inline-block; line-height: 5vh;">
-                 
-                  </div>
-                  <div>
-                    //Index
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome!</title>
+    <meta name="description" content="Pure JavaScript parallax scrolling effect. jQuery supported. Youtube and Vimeo parallax supported.">
+    <link href="css/demo.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.3/ofi.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="./dist/jarallax.css" rel="stylesheet">
+    <script src="./dist/jarallax.js"></script>
+    <script src="./dist/jarallax-video.js"></script>
+    <script src="./dist/jarallax-element.js"></script>
+</head>
+
+<body>
+    <div class="jarallax" id="intro" data-speed="0.4" style="min-height: 70vh;">
+        <div class="demo-table">
+            <div class="demo-table-cell" style="text-align: center">
+                <h1 class="text"></h1>
+                <img src="img/chevron.svg" style="margin:auto; width:3vw;position: absolute;
+                        bottom: 2vh; padding:none"></img>
+            </div>
+            <br>
+        </div>
+        <img id="header" class="jarallax-img" src="img/uw.jpg">
+    </div>
+    <div class="demo-gap" style="min-height: 30vh">
+        <div class="container">
+            <p>Welcome to my homepage! I'm studying Computer Engineering at the University of Waterloo. Programming is my trade,
+                but my hobbies include photography, graphical design, drawing, discovering foreign music, and collecting
+                things. Check out my blog!</p>
+            <button type="button" id="wp_btn" class="btn btn-outline-dark" onclick="window.location.href='https://arcyleung.wordpress.com/'">Wordpress</button>
+            <button type="button" id="gh_btn" class="btn btn-outline-dark" onclick="window.location.href='https://github.com/arcyleung'">GitHub</button>
+            <button type="button" id="li_btn" class="btn btn-outline-dark" onclick="window.location.href='https://www.linkedin.com/in/arcyleung/'">LinkedIn</button>
+            <button type="button" id="tw_btn" class="btn btn-outline-dark" onclick="window.location.href='https://twitter.com/pspkazy'">Twitter</button>
+            <button type="button" id="sc_btn" class="btn btn-outline-dark" onclick="window.location.href='https://soundcloud.com/gooseintheshell'">SoundCloud</button>
+            <br>
+            <br>
+            <div>
+                <a class="sectionLink" onclick="return false" href="#Projects">Projects</a>
+            </div>
+        </div>
+    </div>
+    <div class="jarallax h-100" id="Projects" data-speed="0.25" style="min-height: 100vh;">
+        <div style="text-align: center">
+            <a class="sectionLink" onclick="return false" href="#Experience">
+                <img src="img/chevron.svg" style="margin:auto; width:3vw;position: absolute;
+                        bottom: 2vh; padding:none"></img>
+            </a>
+        </div>
+
+        <img class="jarallax-img" src="img/ux.jpg" alt="">
+        <div class="container h-100">
+            <div class="row h-100 justify-content-center align-items-center container" style="margin: 2em">
+                <div class="card-columns">
+                    <div class="card text-white bg-dark mb-3">
+                        <a href="https://play.google.com/store/apps/details?id=com.absoluteapps.arthurl.mobooru&hl=en">
+                            <img class="card-img-top" src="img/mobooru.jpg" alt="Card image cap">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">MoBooru</h5>
+                            <p class="card-text">An imageboard viewer for Android devices; discover, share, and curate beautiful wallpapers!</p>
+                            <p class="card-text">
+                                <small class="text-muted">Android SDK, Java</small>
+                            </p>
+                        </div>
                     </div>
-               </li>
-               <li>
-                  <a href="#about_me"><i class="fa fa-fw fa-home"></i> About Me</a>
-               </li>
-               <li>
-                  <a href="#experience"><i class="fa fa-fw fa-folder"></i> Experience</a>
-               </li>
-               <li>
-                  <a href="#development"><i class="fa fa-fw fa-file-o"></i> Development</a>
-               </li>
-               <li>
-                  <a href="#contact_me"><i class="fa fa-fw fa-cog"></i> Contact Me</a>
-               </li>
-               <li>
-                <div style=" display: inline-block; line-height: 5vh;">
-                    
-                     </div>
-                     <div>
-                       //Links
-                       </div>
-             </li>
-             <li>
-                <a href="https://arcyleung.wordpress.com/"><i class="fa fa-fw fa-cog"></i> Blog</a>
-             </li>
-             <li>
-                <a href="https://github.com/arcyleung"><i class="fa fa-fw fa-cog"></i> Github</a>
-             </li>
-            </ul>
-         </nav>
-                <div class="scrollguard"></div>
-         <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
-         <span class="hamb-top"></span>
-         <span class="hamb-middle"></span>
-         <span class="hamb-bottom"></span>
-         </button>
-      </div>
-      <div class="container-fluid parallax">
-      <div class="row parallax__group" id="about_me">
-         <div class="parallax__layer parallax__layer--base">
-            <div class="bg_1 back"></div>
-         </div>
-         <div class="parallax__layer parallax__layer--deep2">
-            <div class="col-md-12">
-               <div class="jumbotron" style="color: #FFFFFF">
-                  <div class="centering_wrapper_right"   style="height: auto; border-radius:5px;padding : 1em;background-color:rgba(0,0,0,0.75);">
-                     <h1 style="font-family: 'GruppeStencil'">
-                        //ABOUT
-                     </h1>
-                     <h2><span>Hello, my name is Arthur</span></h2>
-                     <br>
-                     <h3><span>Welcome to my homepage!</span></h3>
-                     <p><span>I'm reading Computer Engineering at UWaterloo. Programming is my trade, 
-                        but my hobbies include photography, drawing, graphical design, discovering foreign music, 
-                        and collecting things. Check out my <a href="https://arcyleung.wordpress.com/"><mark>blog</mark></a>!</span>
-                     </p>
-                  </div>
-                  <a class="sectionLink" href="#experience" style="position:absolute; z-index:1000!important;bottom: 0vh; left:50vw; position: absolute;" href="#experience">
-                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="#FFFFFF">
-                        <polygon points="396.6,160 416,180.7 256,352 96,180.7 115.3,160 256,310.5 "/>
-                     </svg>
-                  </a>
-               </div>
+                    <div class="card text-white bg-dark mb-3">
+                        <a href="https://drive.google.com/file/d/0B9FWN2-4d63fdUtJR1A0N0lQUzA/view">
+                            <img class="card-img-top" src="img/p2p.jpg" alt="Card image cap">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">P2P network usage study</h5>
+                            <p class="card-text">A study examining what types of content are distributed by users, through P2P filesharing networks</p>
+                            <p class="card-text">
+                                <small class="text-muted">R, python, numpy, ggplot2</small>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-dark mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Publications</h5>
+                            <p class="card-text">Authored</p>
+                            <li></li>
+
+                            <p class="card-text">Technical Illustrations</p>
+                            <li>
+                                <a href="https://www.researchgate.net/profile/Lawrence_Leung/publication/235784247_Neuroimaging_in_Chronic_and_Neuropathic_Pain/links/0fcfd5137d0054cddf000000/Neuroimaging-in-Chronic-and-Neuropathic-Pain.pdf">Neuroimaging in chronic and neuropathic pain. Int J Pain.
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.researchgate.net/publication/275591626_Guided_by_numbers_how_far_should_we_go">Guided by numbers—how far should we go? InnovAiT.
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3894036/">Hyfrecation for recalcitrant non-genital warts. J Fam Med Pri Care.
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.researchgate.net/publication/259986975_Recurrent_Hydrocoele">Recurrent Hydrocoele. J Fam Med Pri Care.
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.ncbi.nlm.nih.gov/pubmed/22946077">From ladder to platform: a new concept for pain management. J Prim Health Care.
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
             </div>
-         </div>
-         <div class="lbox">
-            <div id="block1" style="bottom: 0vh; position: absolute; font-size: 18vw; font-family: 'RakerStencilBold'; color: rgba(255,255,255,0.9); text-shadow: rgba(255,255,255,0.9) 0 0 10px;">
-               01
-            </div>
-            <div class="parallax__layer parallax__layer--deep2">
-            </div>
-         </div>
-      </div>
-      <div class="row parallax__group" id="experience">
-         <div class="lbox">
-            <div class="parallax__layer--fore" id="block2" style="left: -3.7vw; bottom: -4vw; position: absolute; font-size: 22vw; font-family: 'RakerStencilBold'; color: rgba(255,255,255,0.9); text-shadow: rgba(255,255,255,0.9) 0 0 10px;">
-               02
-            </div>
-         </div>
-         <div class="parallax__layer parallax__layer--base">
-            <div class="bg_2 back"></div>
-         </div>
-         <div class="parallax__layer parallax__layer--fore">
-            <div class="centering_wrapper_left">
-               <div class="col-md-6 hidden-xs">
-                  <div class="col-xs-12 hidden-sm" style="background-color: rgba(0,0,0,0.75); padding: 20px 10px 20px 10px; overflow: hidden; border-radius: 5px;">
-                     <h1 style="font-family:GruppeStencil; color: #FFFFFF;position: relative; 
-                        top: -20px;
-                        left: 10px;">//Technologies</h1>
-                     <table class="table table-condensed" style="color: #fff">
+        </div>
+    </div>
+    <div class="jarallax" data-speed="0.2">
+        <img class="jarallax-img" src="img/triple.jpg" alt="">
+    </div>
+    <div class="jarallax h-100" id="Experience" data-speed="-0.1" style="min-height: 100vh;">
+        <div style="text-align:center">
+            <a class="sectionLink" onclick="return false" href="#Contact">
+                <img src="img/chevron.svg" style="margin:auto; width:3vw;position: absolute;
+                bottom: 2vh; padding:none"></img>
+            </a>
+        </div>
+
+        <img id="mid" class="jarallax-img" src="img/knife2.jpg" alt="">
+        <div id="jumbo" class="container d-flex h-100">
+            <div class="row justify-content-center align-self-center">
+                <div class="col">
+                    <h1 class="display-4">
+                        <span style="color: #FFF; background:#000">Cutting Edge</span>
+                    </h1>
+                    <p class="lead">
+                        <span style="color: #FFF; background:#000">I work with modern stacks and languages, even experimental ones</span>
+                    </p>
+                    <br/>
+                    <br/>
+                    <table class="table table-sm">
                         <thead>
-                           <tr>
-                              <th>Frontend 📱</th>
-                              <th>Backend 🖥️</th>
-                              <th>Other 🎓</th>
-                           </tr>
+                            <tr>
+                                <th scope="col">Frontend 📱</th>
+                                <th scope="col">Backend 🖥️</th>
+                                <th scope="col">Other 🎓</th>
+                            </tr>
                         </thead>
-                        <tbody style="font-size: 1.5rem; max-width: 100%">
-                           <tr>
-                              <td>HTML/CSS/JS</td>
-                              <td>Java SE/EE</td>
-                              <td>R project</td>
-                           </tr>
-                           <tr>
-                              <td>AngularJS</td>
-                              <td>Spring</td>
-                              <td>Python</td>
-                           </tr>
-                           <tr>
-                              <td>Ionic</td>
-                              <td>C/C++</td>
-                              <td>Android SDK</td>
-                           </tr>
-                           <tr>
-                              <td>Cordova</td>
-                              <td>.NET</td>
-                              <td>SQL(ite)</td>
-                           </tr>
-                           <tr>
-                              <td>Bootstrap</td>
-                              <td>NodeJS</td>
-                              <td>Matlab</td>
-                           </tr>
+                        <tbody>
+                            <tr>
+                                <td>HTML/CSS/JS</td>
+                                <td>Java SE/EE</td>
+                                <td>R project</td>
+                            </tr>
+                            <tr>
+                                <td>AngularJS</td>
+                                <td>Spring</td>
+                                <td>Python</td>
+                            </tr>
+                            <tr>
+                                <td>Ionic</td>
+                                <td>C/C++</td>
+                                <td>Android SDK</td>
+                            </tr>
+                            <tr>
+                                <td>Cordova</td>
+                                <td>.NET</td>
+                                <td>SQL(ite)</td>
+                            </tr>
+                            <tr>
+                                <td>Bootstrap</td>
+                                <td>NodeJS</td>
+                                <td>Matlab</td>
+                            </tr>
                         </tbody>
-                     </table>
-                  </div>
-               </div>
-               <div class="col-md-6">
-                  <div class="col-md-12" style="padding-top: 1em;background-color: rgba(0,0,0,0.75); padding: 20px 10px 20px 10px; overflow: hidden; border-radius: 5px;">
-                     <h1 style="font-family:GruppeStencil; color: #FFFFFF;position: relative; 
-                        top: -20px;
-                        left: 10px;">//Employers</h1>
-                     <div class="panel-group" id="accordion">
-                        <div class="panel panel-default">
-                           <div class="panel-heading">
-                              <h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" href="#collapseOne">Ultimate Software Group Inc.</a></h4>
-                           </div>
-                           <div class="panel-collapse collapse in" id="collapseOne">
-                              <img align="right" class="company_logo" height="75" src="/img/ultimatesoftware_logo.jpg" width="75">
-                              <div class="panel-body">
-                                 A SaaS company based in Florida, that caters to other companies in managing human resources matters, through their flagship product UltiPro. My contribution was to develop and test their cross platform mobile application <a href="https://itunes.apple.com/ca/app/ultipro/id1146945670?mt=8&ign-mpt=uo%3D4">(iOS)</a> | <a href="https://play.google.com/store/apps/details?id=com.ultimatesoftware.ultipromobile&hl=en">(Android)</a> for customers to use.
-                              </div>
-                           </div>
-                        </div>
-                        <div class="panel panel-default">
-                           <div class="panel-heading">
-                              <h4 class="panel-title"><a class="accordion-toggle collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo">Nokia Solutions and Networks</a></h4>
-                           </div>
-                           <div class="panel-collapse collapse" id="collapseTwo">
-                              <img align="right" class="company_logo" height="75" src="/img/nokia_logo.png" width="75">
-                              <div class="panel-body">
-                                 Former Nakina Systems, a physical/ virtual network management and security business in the telecomms industry, now a part of Nokia to expand into the global networking market.
-                              </div>
-                           </div>
-                        </div>
-                        <div class="panel panel-default">
-                           <div class="panel-heading">
-                              <h4 class="panel-title"><a class="accordion-toggle collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseThree">Software Analysis and Intelligence Lab</a></h4>
-                           </div>
-                           <div class="panel-collapse collapse" id="collapseThree">
-                              <img align="right" class="company_logo" height="75" src="/img/queens_logo.png" width="75">
-                              <div class="panel-body">
-                                 SAIL is a leading software engineering research team of Queen's University. The group produces quality publications on data mining, software architecture, distributed systems, and machine learning. See my work 
-                                 <a href="https://docs.google.com/presentation/d/1Qf-sOc8bdq_altCKefaCiJdq6KIWF5ulsMmOKIVbpto/edit?usp=sharing">here</a>, on replicating a <a href="http://www.cell.com/current-biology/abstract/S0960-9822(14)00477-1">Current Biology study</a> in the field of Software Engineering
+                    </table>
+                </div>
+                <div class="col">
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="hd1">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#c1" aria-expanded="true" aria-controls="c1">
+                                        Bayer Radiology
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="c1" class="collapse show" aria-labelledby="hd1" data-parent="#accordion">
+                                <div class="card-body">
+                                    A medical imaging division which provides software for safely managing patients' radiation dosage in radiology applications.
                                 </div>
-                           </div>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <a class="sectionLink" href="#about_me" style="position:absolute; z-index:1000!important;top: 2vh; left:52vw; position: absolute;">
-               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                   viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="#FFFFFF">
-                  <polygon points="396.6,352 416,331.3 256,160 96,331.3 115.3,352 256,201.5 "/>
-               </svg>
-            </a>
-            <a class="sectionLink" href="#development" style="position:absolute; z-index:1000!important;bottom: 2vh; left:52vw; position: absolute;" href="#experience">
-               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                   viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="#FFFFFF">
-                  <polygon points="396.6,160 416,180.7 256,352 96,180.7 115.3,160 256,310.5 "/>
-               </svg>
-            </a>
-         </div>
-      </div>
-      <div class="row parallax__group" id="development">
-         <div class="parallax__layer parallax__layer-deep">
-            <div class="lbox" style="background-color: rgba(242,109,0,1);">
-            </div>
-         </div>
-         <div class="parallax__layer parallax__layer--back">
-            <div class="bg_5 back"></div>
-         </div>
-         <div class="parallax__layer parallax__layer--fore">
-         </div>
-         <div class="parallax__layer parallax__layer--fore">
-            <div class="container_carousel centering_wrapper">
-               <div class="carousel slide carousel-fade" data-ride="carousel" id="carousel">
-                  <ol class="carousel-indicators">
-                     <li class="active" data-slide-to="0" data-target="#carousel"></li>
-                     <li data-slide-to="1" data-target="#carousel"></li>
-                     <li data-slide-to="2" data-target="#carousel"></li>
-                  </ol>
-                  <div class="carousel-inner carousel-zoom">
-                     <div class="active item">
-                        <a href="https://drive.google.com/open?id=0B9FWN2-4d63fdUtJR1A0N0lQUzA"><img class="img-responsive" src="/img/torrentstudy.png"></a>
-                        <div class="carousel-caption">
-                           <h2><span>Bittorrent filesharing statistics study<br>
-                              A statistical study on metadata from a dataset of more than 15 million torrents</span>
-                           </h2>
+                        <div class="card">
+                            <div class="card-header" id="hd2">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#c2" aria-expanded="true" aria-controls="c2">
+                                        Ultimate Software Group Inc.
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="c2" class="collapse" aria-labelledby="hd2" data-parent="#accordion">
+                                <div class="card-body">
+                                    A SaaS company based in Florida, that caters to other companies in managing human resources matters, through their flagship
+                                    product UltiPro. My contribution was to develop and test their cross platform mobile
+                                    application
+                                    <a href="https://itunes.apple.com/ca/app/ultipro/id1146945670?mt=8&ign-mpt=uo%3D4">(iOS)</a> |
+                                    <a href="https://play.google.com/store/apps/details?id=com.ultimatesoftware.ultipromobile&hl=en">(Android)</a> for customers to use.
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                     <div class="item">
-                        <span><a href="https://github.com/arcyleung/MoBooru"><img class="img-responsive" src="/img/mobooru.png"></a></span>
-                        <div class="carousel-caption">
-                           <span></span>
-                           <h2><span><span>Mobooru<br>
-                              A mobile imageboard reader for android</span></span>
-                           </h2>
+                        <div class="card">
+                            <div class="card-header" id="hd3">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#c3" aria-expanded="false" aria-controls="c3">
+                                        Nokia Solutions and Networks
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="c3" class="collapse" aria-labelledby="hd3" data-parent="#accordion">
+                                <div class="card-body">
+                                    Former Nakina Systems, a physical/ virtual network management and security business in the telecomms industry, now a part
+                                    of Nokia to expand into the global networking market.
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                     <div class="item">
-                        <a href="https://devpost.com/software/uwglass?ref_content=contribution-prompt&ref_feature=engagement&ref_medium=email&utm_campaign=contribution-prompt&utm_content=contribution_reminder&utm_medium=email&utm_source=transactional#app-team"><img class="img-responsive" src="/img/uwglass.png"></a>
-                        <div class="carousel-caption">
-                           <h2><span>UWGlass<br>
-                              An EngHack 2015 contest entry allowing students to leave reviews for co-op employers</span>
-                           </h2>
+                        <div class="card">
+                            <div class="card-header" id="hd4">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#c4" aria-expanded="false" aria-controls="c4">
+                                        Queen's University
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="c4" class="collapse" aria-labelledby="hd4" data-parent="#accordion">
+                                <div class="card-body">
+                                    SAIL is a leading software engineering research team of Queen's University. The group produces quality publications on data
+                                    mining, software architecture, distributed systems, and machine learning. See my work
+                                    <a href="https://docs.google.com/presentation/d/1Qf-sOc8bdq_altCKefaCiJdq6KIWF5ulsMmOKIVbpto/edit?usp=sharing">here</a>, on replicating a
+                                    <a href="http://www.cell.com/current-biology/abstract/S0960-9822(14)00477-1">Current Biology study</a> in the field of Software Engineering
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <!-- Carousel nav -->
-                  <a class="carousel-control left" data-slide="prev" href="#carousel">‹</a> <a class="carousel-control right" data-slide="next" href="#carousel">›</a>
-               </div>
+                    </div>
+                </div>
             </div>
-            <div id="block3" style="bottom:0vh; position: absolute; font-size: 16vw; font-family: 'RakerStencilBold'; color: #FFFFFF; text-shadow: rgba(255,255,255,1) 0 0 10px;">
-               03
-            </div>
-            <a class="sectionLink" href="#experience" style="position:absolute; z-index:1000!important;top: 2vh; left:52vw; position: absolute;">
-               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                   viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="#FFFFFF">
-                  <polygon points="396.6,352 416,331.3 256,160 96,331.3 115.3,352 256,201.5 "/>
-               </svg>
-            </a>
-            <a class="sectionLink" href="#contact_me" style="position:absolute; z-index:1000!important;bottom: 2vh; left:52vw; position: absolute;">
-               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                   viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="#FFFFFF">
-                  <polygon points="396.6,160 416,180.7 256,352 96,180.7 115.3,160 256,310.5 "/>
-               </svg>
-            </a>
-         </div>
-      </div>
-      <div class="row parallax__group" id="contact_me">
-      <div class="parallax__layer parallax__layer--base">
-         <div class="bg_4 back"></div>
-         <div class="lbox">
-            <div id="block4" style="bottom: 0vh; position: absolute; font-size: 16vw; font-family: 'RakerStencilBold'; color: rgba(255,255,255,0.9); text-shadow: rgba(255,255,255,0.9) 0 0 10px;">
-               04
-            </div>
-         </div>
-      </div>
-      <div class="parallax__layer parallax__layer--fore">
-         <div class="col-md-12">
-            <div class="jumbotron" style="color: #FFFFFF">
-               <div class="centering_wrapper_right"   style="height: auto; border-radius:5px;padding : 1em;background-color:rgba(0,0,0,0.75);">
-                  <h1 style="font-family: 'GruppeStencil'">
-                     //CONTACT
-                  </h1>
-                  <a href="https://www.linkedin.com/in/arcyleung/">
-                     <div class="col-sm-2 contactLink">
-                        <object style="pointer-events: none;" type="image/svg+xml" data="../fonts/linkedin2.svg"></object>
-                     </div>
-                  </a>
-                  <a href="https://github.com/arcyleung?tab=repositories">
-                     <div class="col-sm-2 contactLink">
-                        <object style="pointer-events: none;"  type="image/svg+xml" data="../fonts/github.svg"></object>
-                     </div>
-				  </a>
-					<a href="https://plus.google.com/u/1/+pspkazy2">
-                     <div class="col-sm-2 contactLink">
-                        <object style="pointer-events: none;"  type="image/svg+xml" data="../fonts/google-plus.svg"></object>
-                     </div>
-				  </a>
-					<a href="mailto:arcyleung@gmail.com?Subject=Let's%20talk">
-                     <div class="col-sm-2 contactLink">
-                        <object style="pointer-events: none;"  type="image/svg+xml" data="../fonts/mail2.svg"></object>
-                     </div>
-				  </a>
-					<a href="https://arcyleung.wordpress.com/">
-                     <div class="col-sm-2 contactLink">
-                        <object style="pointer-events: none;"  type="image/svg+xml" data="../fonts/pen.svg"></object>
-                     </div>
-				  </a>
-					<a href="https://soundcloud.com/gooseintheshell">
-                     <div class="col-sm-2 contactLink">
-                        <object style="pointer-events: none;"  type="image/svg+xml" data="../fonts/soundcloud.svg"></object>
-                     </div>
-                  </a>
-                  <div class="col-sm-4 contactAddress">
-                     <address class="address">
-                        <strong>Arthur Leung</strong><br>
-                        ac7leung@edu.uwaterloo.ca<br>
-                        Waterloo, ON N2L 3G5<br>
-                     </address>
-                  </div>
-               </div>
-               <a class="sectionLink" href="#development" style="position:absolute; z-index:1000!important;top: 2vh; left:52vw; position: absolute;">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="#FFFFFF">
-                     <polygon points="396.6,352 416,331.3 256,160 96,331.3 115.3,352 256,201.5 "/>
-                  </svg>
-               </a>
-            </div>
-         </div>
-         <script src="js/jquery.min.js"></script> 
-         <script src="js/bootstrap.min.js"></script> 
-         <script src="js/scripts.js"></script> 
-         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-      </div>
-      <a href="http://www.onlinewebfonts.com" style="display: none; visibility: hidden">oNline Web Fonts</a>
-   </body>
+
+
+        </div>
+    </div>
+    <div id="Contact" class="jarallax" data-speed="-0.52">
+        <img class="jarallax-img" src="img/snow.jpg" alt=""></img>
+    </div>
+    <div class="demo-gap" style="min-height: 20vh;">
+    </div>
+    <script type="text/javascript">
+        objectFitImages();
+
+        /* init Jarallax */
+        jarallax(document.querySelectorAll('.jarallax'));
+
+        jarallax(document.querySelectorAll('.jarallax-keep-img'), {
+            keepImg: true,
+        });
+
+    </script>
+    <script>
+        class TextScramble {
+            constructor(el) {
+                this.el = el
+                this.chars = '!<>-_\\/[]{}—=+*^?#'
+                this.update = this.update.bind(this)
+            }
+            setText(newText) {
+                const oldText = this.el.innerText
+                const length = Math.max(oldText.length, newText.length)
+                const promise = new Promise((resolve) => this.resolve = resolve)
+                this.queue = []
+                for (let i = 0; i < length; i++) {
+                    const from = oldText[i] || ''
+                    const to = newText[i] || ''
+                    const start = Math.floor(Math.random() * 40)
+                    const end = start + Math.floor(Math.random() * 40)
+                    this.queue.push({ from, to, start, end })
+                }
+                cancelAnimationFrame(this.frameRequest)
+                this.frame = 0
+                this.update()
+                return promise
+            }
+            update() {
+                let output = ''
+                let complete = 0
+                for (let i = 0, n = this.queue.length; i < n; i++) {
+                    let { from, to, start, end, char } = this.queue[i]
+                    if (this.frame >= end) {
+                        complete++
+                        output += to
+                    } else if (this.frame >= start) {
+                        if (!char || Math.random() < .01) {
+                            char = this.randomChar()
+                            this.queue[i].char = char
+                        }
+                        output += `<span class="dud" style="background: rgba(0,0,0,0.8)">${char}</span>`
+                    } else {
+                        output += from
+                    }
+                }
+                this.el.innerHTML = output
+                if (complete === this.queue.length) {
+                    this.resolve()
+                } else {
+                    this.frameRequest = requestAnimationFrame(this.update)
+                    this.frame++
+                }
+            }
+            randomChar() {
+                return this.chars[Math.floor(Math.random() * this.chars.length)]
+            }
+        }
+
+        const phrases = [
+            'Hi, my name is Arthur',
+            '我が名は梁雋賢',
+            '我的名字是梁雋賢'
+        ]
+
+        const el = document.querySelector('.text')
+        const fx = new TextScramble(el)
+
+        let counter = 0
+        const next = () => {
+            fx.setText(phrases[counter]).then(() => {
+                setTimeout(next, 900)
+            })
+            counter = (counter + 1) % phrases.length
+        }
+
+        next()
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        $('.sectionLink').click(function () {
+            var body = $("html, body");
+            var dest = $(this).attr("href");
+            body.animate({ scrollTop: $(dest).offset().top }, 1200, 'easeInOutCirc', function () {
+            });
+        });
+    </script>
+</body>
+
 </html>
