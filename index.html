@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome!</title>
-    <meta name="description" content="Pure JavaScript parallax scrolling effect. jQuery supported. Youtube and Vimeo parallax supported.">
+    <meta name="description" content="Welcome to my site!">
     <link href="css/demo.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.3/ofi.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <div class="jarallax" id="intro" data-speed="0.4" style="min-height: 70vh;">
+    <div class="jarallax" id="Intro" data-speed="0.4" style="min-height: 70vh;">
         <div class="demo-table">
             <div class="demo-table-cell" style="text-align: center">
                 <h1 class="text"></h1>
@@ -41,7 +41,7 @@
             <button type="button" id="sc_btn" class="btn btn-outline-dark" onclick="window.location.href='https://soundcloud.com/gooseintheshell'">SoundCloud</button>
             <br>
             <br>
-            <div>
+            <div style="text-align: center">
                 <a class="sectionLink" onclick="return false" href="#Projects">Projects</a>
             </div>
         </div>
@@ -131,7 +131,7 @@
         <div id="jumbo" class="container d-flex h-100">
             <div class="row justify-content-center align-self-center">
                 <div class="col">
-                    <h1 class="display-4">
+                    <h1 class="display-3">
                         <span style="color: #FFF; background:#000">Cutting Edge</span>
                     </h1>
                     <p class="lead">
@@ -189,7 +189,7 @@
 
                             <div id="c1" class="collapse show" aria-labelledby="hd1" data-parent="#accordion">
                                 <div class="card-body">
-                                    A medical imaging division which provides software for safely managing patients' radiation dosage in radiology applications.
+                                    A medical imaging division which provides software for safely managing and calculating patients' radiation exposure in dosimetry applications.
                                 </div>
                             </div>
                         </div>
@@ -247,14 +247,25 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
     <div id="Contact" class="jarallax" data-speed="-0.52">
         <img class="jarallax-img" src="img/snow.jpg" alt=""></img>
     </div>
-    <div class="demo-gap" style="min-height: 20vh;">
+    <div class="demo-gap" style="max-height: 20vh; min-height: 20vh;">
+            <div class="d-flex flex-row">
+                    <h1 class="display-4">
+                            <span style="color: #FFF; background:#000">Contact</span>
+                        </h1>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                        <p class="lead">
+                                <span style="color: #FFF; background:#000">Drop me a line at <a href="mailto:arcyleung@gmail.com?Subject=Let's%20talk">arcyleung@gmail.com</a> and lets see how I can help</span>
+                            </p>
+                            <p class="lead">
+                                <span style="color: #FFF; background:#000">Arthur Leung 2018</span>
+                            </p>
+                      </div>
     </div>
     <script type="text/javascript">
         objectFitImages();
@@ -355,6 +366,63 @@
             });
         });
     </script>
+    <script>
+
+var sections = ['#Intro', '#Projects', '#Experience','#Contact'];
+var currentPos = 0;
+    function scrollListen ($pos) {
+console.log($pos);
+  $(window).on('scroll', function(){
+    $(window).off('scroll');
+
+    let origin = $(window).scrollTop();
+    let delta = 0;
+
+    $(window).on('scroll', () => {
+      delta = origin - $(window).scrollTop();
+
+      if(Math.abs(delta) > 25){
+        $(window).off('scroll');
+
+        if(delta < 0 && sections[currentPos + 1]){
+          currentPos++;
+
+          setTimeout(function() {
+            $('html, body').animate({scrollTop: $(sections[currentPos]).offset().top}, 500, function() {
+              scrollListen();
+            });
+          }, 500);
+
+        }else if(delta > 0 && sections[currentPos - 1]){
+          currentPos--;
+
+          setTimeout(function() {
+            $('html, body').animate({scrollTop: $(sections[currentPos]).offset().top}, 500, function() {
+
+              scrollListen();
+            });
+          }, 500);
+        }
+      }
+    });
+  });
+}
+    $(function() {
+  $('.window').css({
+    'height': window.innerHeight,
+  });
+
+  $(window).resize(() => {
+    $('.window').css({
+      'height': window.innerHeight,
+    });
+  });
+
+  scrollListen(currentPos);
+
+});
+
+</script>
 </body>
 
 </html>

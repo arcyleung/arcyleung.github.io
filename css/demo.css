@@ -67,6 +67,17 @@ body {
     object-position: 50% 0% !important;
     min-height: 80vh;
 }
+a:link {
+    color: #FFF;
+}
+
+/* visited link */
+a:visited {
+    color: #606060;
+}
+sectionLink:link {
+    color:#000;
+}
 h1 {
     font-size: 50px;
 }
@@ -171,7 +182,7 @@ a:hover, a:focus {
 
 /* gap */
 .demo-gap {
-    padding: 50px;
+    padding: 3vh;
     overflow: hidden;
 }
 .demo-gap h1,
