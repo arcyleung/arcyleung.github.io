@@ -67,8 +67,17 @@ body {
     object-position: 50% 0% !important;
     min-height: 80vh;
 }
-a:link {
+.card-body .list-group {
+    font-size: 12px;
+}
+.card-title {
     color: #FFF;
+}
+.card-text {
+    color: #A0A0A0;
+}
+.list-group-item {
+    padding: 5px 5px!important
 }
 
 /* visited link */
@@ -228,6 +237,41 @@ a:hover, a:focus {
     float: right;
 }
 
+/* Marquee */
+.marquee-parent {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 30px;
+  }
+  .marquee-child {
+    display: block;
+    width: 500px;
+    /* width of your text div */
+    height: 30px;
+    /* height of your text div */
+    position: absolute;
+    
+  }
+  .marquee-child:hover {
+    -webkit-animation: marquee-in 2s ease-in-out; /* change 5s value to your desired speed */
+  }
+  @keyframes marquee-in {
+    0% {
+      left: 0%;
+    }
+    100% {
+      left: -80px /* same as your text width */
+    }
+  }
+  @keyframes marquee-out {
+    0% {
+      left: -80%;
+    }
+    100% {
+      left: 0px /* same as your text width */
+    }
+  }
 
 /* Carousel */
 .demo-carousel {
