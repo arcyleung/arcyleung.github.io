@@ -2,475 +2,493 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome!</title>
-    <meta name="description" content="Welcome to my site!">
-    <link href="css/styles.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.3/ofi.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <link href="./dist/jarallax.css" rel="stylesheet">
-    <script src="./dist/jarallax.js"></script>
-    <script src="./dist/jarallax-video.js"></script>
-    <script src="./dist/jarallax-element.js"></script>
+  <meta charset="utf-8" />
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no" name="viewport" />
+  <meta content="Welcome!" name="description" />
+  <!-- <meta content="Semantic-UI, Theme, Design, Template" name="keywords" /> -->
+  <meta content="PPType" name="author" />
+  <meta content="#ffffff" name="theme-color" />
+  <title>Welcome to my homepage!</title>
+  <link href="./static/dist/semantic-ui/semantic.min.css" rel="stylesheet" type="text/css" />
+  <script src="./static/dist/jquery/jquery.min.js"></script>
 </head>
 
 <body>
-    <div class="jarallax" id="Intro" data-speed="0.4" style="min-height: 70vh;">
-        <div class="demo-table">
-            <div class="demo-table-cell" style="text-align: center">
-                <h1 class="text"></h1>
-            </div>
-            <br>
-        </div>
-        <img id="header" class="jarallax-img" src="img/uw.jpg">
+  <div class="ui vertical inverted sidebar menu">
+      <a class="item" href="#home">Home</a>
+      <a class="item" href="#works">Works</a>
+      <a class="item" href="#companies">Companies</a>
+      <a class="item" href="#pubs">Publications</a>
+      <a class="item" href="#contact">Contact</a>
+      </br>
+      </br>
+      <a class="item" href="mailto:arcyleung@gmail.com?Subject=Let's%20talk"> arcyleung@gmail.com</a>
+      <a class="item" href="https://github.com/arcyleung"><i class="github icon"></i>GitHub</a>
+      <a class="item" href="https://twitter.com/arcyleung"><i class="twitter icon"></i>Twitter</a>
+      <a class="item" href="https://www.linkedin.com/in/arcyleung/"><i class="linkedin icon"></i>LinkedIn</a>
+      <a class="item" href="https://arcyleung.wordpress.com/"><i class="wordpress icon"></i>Personal Blog</a>
+  </div>
+
+  <div id='site-content' class="pusher">
+    <div class="ui inverted vertical masthead right aligned segment">
+      <div class="ui container">
+      </div>
+      <div class="ui text container">
+        <mark>
+          <h1 class="ui inverted header">
+            <span class="highlight-span">Hi, my name is Arthur</span>
+          </h1>
+        </mark>
+        <h2>
+          <span class="highlight-span">Welcome to my homepage!</span>
+        </h2>
+      </div>
     </div>
-    <div class="demo-gap" style="min-height: 30vh">
-        <div class="container">
-            <p>Welcome to my homepage! I'm studying Computer Engineering at the University of Waterloo. <br>Programming is my trade,
-                but my hobbies include <a class="sectionLink" onclick="return false" href="#Projects">photography</a>, <a class="sectionLink" onclick="return false" href="#Projects">graphical design/ illustration</a>, <a href="https://soundcloud.com/gooseintheshell">discovering foreign music</a>. Check out my blog!</p>
-            <button type="button" id="wp_btn" class="btn btn-outline-dark" onclick="window.open('https://arcyleung.wordpress.com/')">Wordpress</button>
-            <button type="button" id="gh_btn" class="btn btn-outline-dark" onclick="window.open('https://github.com/arcyleung')">GitHub</button>
-            <button type="button" id="li_btn" class="btn btn-outline-dark" onclick="window.open('https://www.linkedin.com/in/arcyleung/')">LinkedIn</button>
-            <button type="button" id="tw_btn" class="btn btn-outline-dark" onclick="window.open('https://twitter.com/pspkazy')">Twitter</button>
-            <button type="button" id="sc_btn" class="btn btn-outline-dark" onclick="window.open('https://soundcloud.com/gooseintheshell')">SoundCloud</button>
-
-            <button type="button" id="resume_btn" class="btn btn-outline-dark float-right" onclick="window.open('res/arcyleung.pdf')">Resume/ CV</button>
-
-            <div style="text-align: center">
-                <a class="sectionLink" onclick="return false" href="#Projects">
-                        <img src="img/chevron_dark.svg" style="margin:auto; width:3vw;position: absolute;
-                        bottom: 2vh; padding:none"></img>
-                </a>
-                
-            </div>
+    <div class="navigation" style="height: 4vh">
+      <div class="ui huge secondary pointing menu sticky" style="height: 4vh; justify-content: center">
+        <div style="display: inline-flex; width: 1100px; justify-content: space-between">
+          <a class="toc item"><i class="sidebar icon"></i></a>
+          <a class="item" href="#home">Home</a>
+          <a class="item" href="#works">Works</a>
+          <a class="item" href="#companies">Companies</a>
+          <a class="item" href="#pubs">Publications</a>
+          <a class="item" href="#contact">Contact</a><br />
+          <a class="item disabled" style="width: 5vw;"></a>
+          <a class="item" href="https://github.com/arcyleung"><i class="github icon"></i></a>
+          <a class="item" href="https://twitter.com/arcyleung"><i class="twitter icon"></i></a>
+          <a class="item" href="https://www.linkedin.com/in/arcyleung/"><i class="linkedin icon"></i></a>
+          <a class="item" href="https://arcyleung.wordpress.com/"><i class="wordpress icon"></i></a>
         </div>
+      </div>
     </div>
-    <div class="jarallax h-100" id="Projects" data-speed="0.25" style="min-height: 100vh;">
-        <div style="text-align: center">
-            <a class="sectionLink" onclick="return false" href="#Experience">
-                <img src="img/chevron.svg" style="margin:auto; width:3vw;position: absolute;
-                        bottom: 2vh; padding:none"></img>
-            </a>
-        </div>
-
-        <img class="jarallax-img" src="img/ux.jpg" alt="">
-        <div class="container h-100">
-            <div class="row h-100 justify-content-center align-items-center container" style="margin: 2em">
-                <div class="card-columns">
-                    <div class="card text-white bg-dark mb-3">
-                        <a href="https://play.google.com/store/apps/details?id=com.absoluteapps.arthurl.mobooru&hl=en">
-                            <img class="card-img-top" src="img/mobooru.jpg" alt="Card image cap">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">MoBooru</h5>
-                            <p class="card-text">An imageboard viewer for Android devices; discover, share, and curate beautiful wallpapers!</p>
-                            <p class="card-text">
-                                <small class="text-muted">Android SDK, Java</small>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card text-white bg-dark mb-3">
-                        <a href="https://drive.google.com/file/d/0B9FWN2-4d63fdUtJR1A0N0lQUzA/view">
-                            <img class="card-img-top" src="img/p2p.jpg" alt="Card image cap">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">P2P network usage study</h5>
-                            <p class="card-text">A study examining what types of content are distributed by users, through P2P filesharing networks</p>
-                            <p class="card-text">
-                                <small class="text-muted">R, python, numpy, ggplot2</small>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card bg-dark mb-3">
-                        <div class="card-body">
-                            <h5 class="card-title">Publications</h5>
-                            <p class="card-text">Authored</p>
-                            <div class="list-group">
-                                    <a class="list-group-item list-group-item-action marquee-parent" href="https://drive.google.com/file/d/1bGSuKGbJBeTbcdW-BB-RJphLmCfnZ3ag/view?usp=sharing">
-                                        <div class="marquee-child">
-                                                Developing an automated testing strategy for a multi-tier mobile application
-                                        </div>
-                                    </a>
-                                    </div>
-                            <p class="card-text">Technical Illustrations</p>
-                            <div class="list-group">
-                                <a class="list-group-item list-group-item-action marquee-parent" href="https://www.researchgate.net/profile/Lawrence_Leung/publication/235784247_Neuroimaging_in_Chronic_and_Neuropathic_Pain/links/0fcfd5137d0054cddf000000/Neuroimaging-in-Chronic-and-Neuropathic-Pain.pdf">
-                                    <div class="marquee-child">
-                                        Neuroimaging in chronic and neuropathic pain. Int J Pain.
-                                    </div>
-                                </a>
-                                <a class="list-group-item list-group-item-action marquee-parent" href="https://www.researchgate.net/publication/275591626_Guided_by_numbers_how_far_should_we_go">
-                                    <div class="marquee-child">
-                                        Guided by numbers—how far should we go? InnovAiT.
-                                    </div>
-                                </a>
-                                <a class="list-group-item list-group-item-action marquee-parent" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3894036/">
-                                    <div class="marquee-child">
-                                        Hyfrecation for recalcitrant non-genital warts. J Fam Med Pri Care.
-                                    </div>
-                                </a>
-                                <a class="list-group-item list-group-item-action marquee-parent" href="https://www.researchgate.net/publication/259986975_Recurrent_Hydrocoele">
-                                    <div class="marquee-child">
-                                        Recurrent Hydrocoele. J Fam Med Pri Care.
-                                    </div>
-                                </a>
-                                <a class="list-group-item list-group-item-action marquee-parent" href="https://www.ncbi.nlm.nih.gov/pubmed/22946077">
-                                    <div class="marquee-child">
-                                        From ladder to platform: a new concept for pain management. J Prim Health Care.
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card bg-dark mb-3">
-                            <div class="card-body">
-                                <h5 class="card-title">Portfolio</h5>
-                                <p class="card-text">Photography</p>
-                                <div class="list-group">
-                                        <a class="list-group-item list-group-item-action" href="https://goo.gl/photos/uT1n5qmdtPgpQZHX7">
-                                            <div class="">
-                                                    Nikon D700 + more
-                                            </div>
-                                        </a>
-                                        </div>
-    
-                                <p class="card-text">CG</p>
-                                <div class="list-group">
-                                        <a class="list-group-item list-group-item-action" href="https://photos.app.goo.gl/nKlycXqlEB1tVhiR2">
-                                            <div class="">
-                                                    Album
-                                            </div>
-                                        </a>
-                                        </div>
-                                
-                            </div>
-                        </div>
+    <div id="home" class="ui vertical stripe segment">
+      <div class="ui middle aligned stackable equal width centered grid container">
+        <div class="row">
+          <div class="eight wide column">
+            <h3 class="ui header">
+              I am studying Computer Engineering
+            </h3>
+            <p>
+              Though my focus is mainly software, I have some experience with hardware and repairs too!<br /><br />
+              My hobbies include photography, graphical design/ illustration, and discovering foreign music. Check
+              out
+              my blog!
+            </p>
+          </div>
+          <div class="eight wide right floated column">
+            <div class="ui equal width centered grid">
+              <div class="centered row">
+                <div class="column collage-image">
+                  <img class="ui fluid image rounded" src="./img/uw.jpg">
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    <div class="jarallax" data-speed="0.2">
-        <img class="jarallax-img" src="img/screen.jpg" alt="">
-    </div>
-    <div class="jarallax h-100" id="Experience" data-speed="-0.1" style="min-height: 100vh;">
-        <div style="text-align:center">
-            <a class="sectionLink" onclick="return false" href="#Contact">
-                <img src="img/chevron.svg" style="margin:auto; width:3vw;position: absolute;
-                bottom: 2vh; padding:none"></img>
-            </a>
-        </div>
-
-        <img id="mid" class="jarallax-img" src="img/knife2.jpg" alt="">
-        <div id="jumbo" class="container d-flex h-100">
-            <div class="row justify-content-center align-self-center">
-                <div class="col">
-                    <h1 class="display-3">
-                        <span style="color: #FFF; background:#000">&nbspCutting Edge&nbsp</span>
-                    </h1>
-                    <p class="lead">
-                        <span style="color: #FFF; background:#000">&nbspI work with modern stacks and languages, even experimental ones&nbsp</span>
-                    </p>
-                    <br/>
-                    <br/>
-                    <table class="table table-sm">
-                        <thead>
-                            <tr>
-                                <th scope="col">Frontend 📱</th>
-                                <th scope="col">Backend 🖥️</th>
-                                <th scope="col">Other 🎓</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>HTML/CSS/JS</td>
-                                <td>Java SE/EE</td>
-                                <td>R project</td>
-                            </tr>
-                            <tr>
-                                <td>AngularJS</td>
-                                <td>Spring</td>
-                                <td>Python</td>
-                            </tr>
-                            <tr>
-                                <td>Ionic</td>
-                                <td>C/C++</td>
-                                <td>Android SDK</td>
-                            </tr>
-                            <tr>
-                                <td>Cordova</td>
-                                <td>.NET</td>
-                                <td>SQL(ite)</td>
-                            </tr>
-                            <tr>
-                                <td>Bootstrap</td>
-                                <td>NodeJS</td>
-                                <td>Matlab</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col">
-                    <div id="accordion">
-                        <div class="card">
-                            <div class="card-header" id="hd1">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link" data-toggle="collapse" data-target="#c1" aria-expanded="true" aria-controls="c1">
-                                        Bayer Radiology
-                                    </button>
-                                </h5>
-                            </div>
-
-                            <div id="c1" class="collapse show" aria-labelledby="hd1" data-parent="#accordion">
-                                <div class="card-body">
-                                    A medical imaging division which provides software for safely managing and calculating patients' radiation exposure in dosimetry applications.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="hd2">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link" data-toggle="collapse" data-target="#c2" aria-expanded="true" aria-controls="c2">
-                                        Ultimate Software Group Inc.
-                                    </button>
-                                </h5>
-                            </div>
-
-                            <div id="c2" class="collapse" aria-labelledby="hd2" data-parent="#accordion">
-                                <div class="card-body">
-                                    A SaaS company based in Florida, that caters to other companies in managing human resources matters, through their flagship
-                                    product UltiPro. My contribution was to develop and test their cross platform mobile
-                                    application
-                                    <a href="https://itunes.apple.com/ca/app/ultipro/id1146945670?mt=8&ign-mpt=uo%3D4">(iOS)</a> |
-                                    <a href="https://play.google.com/store/apps/details?id=com.ultimatesoftware.ultipromobile&hl=en">(Android)</a> for customers to use.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="hd3">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#c3" aria-expanded="false" aria-controls="c3">
-                                        Nokia Solutions and Networks
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="c3" class="collapse" aria-labelledby="hd3" data-parent="#accordion">
-                                <div class="card-body">
-                                    Former Nakina Systems, a physical/ virtual network management and security business in the telecomms industry, now a part
-                                    of Nokia to expand into the global networking market.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="hd4">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#c4" aria-expanded="false" aria-controls="c4">
-                                        Queen's University
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="c4" class="collapse" aria-labelledby="hd4" data-parent="#accordion">
-                                <div class="card-body">
-                                    SAIL is a leading software engineering research team of Queen's University. The group produces quality publications on data
-                                    mining, software architecture, distributed systems, and machine learning. See my work
-                                    <a href="https://docs.google.com/presentation/d/1Qf-sOc8bdq_altCKefaCiJdq6KIWF5ulsMmOKIVbpto/edit?usp=sharing">here</a>, on replicating a
-                                    <a href="http://www.cell.com/current-biology/abstract/S0960-9822(14)00477-1">Current Biology study</a> in the field of Software Engineering
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="Contact" class="jarallax" data-speed="-0.52">
-        <img class="jarallax-img" src="img/snow.jpg" alt=""></img>
-    </div>
-    <div class="demo-gap" style="max-height: 20vh; min-height: 20vh;">
-            <div class="d-flex flex-row">
-                    <h1 class="display-4">
-                            <span style="color: #FFF; background:#000">&nbspContact&nbsp</span>
-                        </h1>
-                  </div>
-                  <div class="d-flex justify-content-between">
-                        <p class="lead">
-                                <span style="color: #FFF; background:#000">&nbspDrop me a line at <a href="mailto:arcyleung@gmail.com?Subject=Let's%20talk">arcyleung@gmail.com</a> and lets see how I can help&nbsp</span></br>
-                                <span a class="topLink" onclick="return false" href="#Intro" style="color: #FFF; background:#000">&nbspBack to Top&nbsp</span>
-                            </p>
-                            <p class="lead">
-                                <span style="color: #FFF; background:#000">&nbspArthur Leung 2018&nbsp</span>
-                            </p>
+        <div class="row posts">
+          <div class="ui middle aligned stackable equal width centered padded grid container">
+            <div class="column">
+              <div class="ui fluid card">
+                <div class="post-frame blurring dimmable image">
+                  <div class="ui dimmer">
+                    <div class="content">
+                      <div class="center">
+                        <a class="ui inverted button" href="https://arcyleung.wordpress.com/2018/10/11/impressions-sony-wh-1000x-m3/">Read</a>
                       </div>
+                    </div>
+                  </div>
+                  <img class='post-image' src="https://arcyleung.files.wordpress.com/2018/10/1.png?w=810">
+                </div>
+                <div class="content">
+                  <a class="header">Impressions: Sony WH-1000X M3</a>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="ui fluid card">
+                <div class="post-frame blurring dimmable image">
+                  <div class="ui dimmer">
+                    <div class="content">
+                      <div class="center">
+                        <a class="ui inverted button" href="https://arcyleung.wordpress.com/2018/05/22/must-know-shell-tools/">Read</a>
+                      </div>
+                    </div>
+                  </div>
+                  <img class='post-image' src="https://arcyleung.files.wordpress.com/2018/03/700_7223.png?w=809">
+                </div>
+                <div class="content">
+                  <a class="header">Must-know shell tools</a>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="ui fluid card">
+                <div class="post-frame blurring dimmable image">
+                  <div class="ui dimmer">
+                    <div class="content">
+                      <div class="center">
+                        <a class="ui inverted button" href="https://arcyleung.wordpress.com/2017/09/25/the-keen-listener/">Read</a>
+                      </div>
+                    </div>
+                  </div>
+                  <img class='post-image' src="https://arcyleung.files.wordpress.com/2017/09/v5chzvi1.png?w=1024">
+                </div>
+                <div class="content">
+                  <a class="header">The keen listener</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script type="text/javascript">
-        objectFitImages();
+    <div id="works" class="ui vertical stripe segment">
+      <div class="ui middle aligned stackable equal width centered grid container">
+        <div class="row">
+          <div class="column">
+            <div class="ui equal width centered grid">
+              <a href="https://play.google.com/store/apps/details?id=com.absoluteapps.arthurl.mobooru" class="column collage-image" style="    background-attachment: fixed !important;     height: 350px !important;
+                  width: 100%;
+                  background-image: url('./img/prod.jpg');
+                  background-size: auto 100vh;
+                  display: table;
+                  background-attachment: fixed !important;
+                  background-repeat: no-repeat !important;
+                  background-position: center; ">
+                <!-- <a href="https://play.google.com/store/apps/details?id=com.absoluteapps.arthurl.mobooru"><img class="ui fluid image rounded"
+                        src="./img/mobooru_splash.png">
+                    </a> -->
+                  </a>
+            </div>
+          </div>
+        </div>
+        <div class="cloud row">
+          <div class="eight wide column">
+            <div class="column collage-image">
+              <img class="ui fluid image rounded" src="./img/wordcloud.jpg">
+            </div>
+          </div>
+          <div class="eight wide right floated column">
+            <h3 class="ui header">
+              Need something built? I can help with that!
+            </h3>
+            <p>
+              From native mobile applications to responsive webapps, suitable for small and medium enterprises. <br /><br />
+              Simple, clean, yet elegant designs. All with performance and compatibility in mind. <br /><br />
+              I am experienced in building and managing scalable microservices for serverless architectures, and
+              have
+              also used a variety of testing frameworks for desktop and mobile applications.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="companies" class="ui vertical stripe segment">
+      <div class="ui text container">
+        <h3 class="ui header">
+          Teams I have been a part of
+        </h3>
+        <p>
+          Spanning multiple industries, each with a unique mission
+        </p>
+        <div class="ui tiny sequenced images centered">
+          <a href="https://www.linkedin.com/feed/update/urn:li:activity:6442847773514559488" data-tooltip="Hendrix.ai development team. An award winning meeting transcription platform. "
+            data-position="bottom center"><img src="./img/tfl.svg" class="ui image" style=""></a>
 
-        /* init Jarallax */
-        jarallax(document.querySelectorAll('.jarallax'));
+          <a data-tooltip="Radimetrics team. A software solution for interfacing radiology equipment and montioring patient dosage. "
+            data-position="bottom center"><img src="./img/bayer.svg" class="ui image" style=""></a>
 
-        jarallax(document.querySelectorAll('.jarallax-keep-img'), {
-            keepImg: true,
-        });
+          <a data-tooltip="UltiPro mobile development team. An iOS and Android app to manage payroll, taxes, and deductions for employees. "
+            data-position="bottom center"><img src="./img/ulti.png" class="ui image" style=""></a>
 
-    </script>
-    <script>
-        class TextScramble {
-            constructor(el) {
-                this.el = el
-                this.chars = '!<>-_\\/[]{}—=+*^?#'
-                this.update = this.update.bind(this)
-            }
-            setText(newText) {
-                const oldText = this.el.innerText
-                const length = Math.max(oldText.length, newText.length)
-                const promise = new Promise((resolve) => this.resolve = resolve)
-                this.queue = []
-                for (let i = 0; i < length; i++) {
-                    const from = oldText[i] || ''
-                    const to = newText[i] || ''
-                    const start = Math.floor(Math.random() * 40)
-                    const end = start + Math.floor(Math.random() * 40)
-                    this.queue.push({ from, to, start, end })
-                }
-                cancelAnimationFrame(this.frameRequest)
-                this.frame = 0
-                this.update()
-                return promise
-            }
-            update() {
-                let output = ''
-                let complete = 0
-                for (let i = 0, n = this.queue.length; i < n; i++) {
-                    let { from, to, start, end, char } = this.queue[i]
-                    if (this.frame >= end) {
-                        complete++
-                        output += to
-                    } else if (this.frame >= start) {
-                        if (!char || Math.random() < .01) {
-                            char = this.randomChar()
-                            this.queue[i].char = char
-                        }
-                        output += `${char}`
-                    } else {
-                        output += from
-                    }
-                }
-                this.el.innerHTML = output
-                if (complete === this.queue.length) {
-                    this.resolve()
-                } else {
-                    this.frameRequest = requestAnimationFrame(this.update)
-                    this.frame++
-                }
-            }
-            randomChar() {
-                return this.chars[Math.floor(Math.random() * this.chars.length)]
-            }
-        }
+          <a data-tooltip="NI Guardian/ Surveyor development team (formerly Nakina Systems). An IAM and Workflow platform for provisioning network elements in VLANs. "
+            data-position="bottom center"><img src="./img/nokia.png" class="ui image" style=""></a>
 
-        const phrases = [
-            'Hi, my name is Arthur',
-            '我が名は梁雋賢',
-            '我的名字是梁雋賢'
-        ]
+          <a data-tooltip="SAIL lab research assistant. Worked with big dataset and feature extraction to build classificaiton model. "
+            data-position="bottom center"><img src="./img/queensu.png" class="ui image" style=""></a>
+        </div>
+      </div>
+    </div>
+    <div id="pubs" class="ui vertical stripe segment">
+      <div class="ui middle aligned stackable equal width centered grid container">
+        <div class="row">
+          <div class="eight wide left floated column">
+            <h3 class="ui header">
+              Studies and other publications
+            </h3>
+            <p>
+              A few reports and papers I have authored as part of my work experience, most of which pertain to
+              automation and performance.
+              </br>
+              </br>
+              I also have illustrated diagrams for a few medical journals.
+            </p>
+            <a class="ui large button" href="mailto:arcyleung@gmail.com?Subject=Let's%20talk">Need an illustrator? Drop me a line!</a>
+          </div>
+          <div class="eight wide column">
+            <div class="ui list">
+              <div class="item">
+                <i class="file icon"></i>
+                <div class="content">
+                  <a class="header" href="https://drive.google.com/file/d/1C3DcS7xQnbZxgK5OFMDX8CgxVxZos6QQ/view?usp=sharing">Designing
+                    an automated cybersecurity threat mitigation system</a>
+                  <div class="description">Setting up an pipeline to regularly testing against a network of VMs.</div>
+                </div>
+              </div>
+              <div class="item">
+                <i class="file icon"></i>
+                <div class="content">
+                  <a class="header" href="https://drive.google.com/file/d/1bGSuKGbJBeTbcdW-BB-RJphLmCfnZ3ag/view?usp=sharing">Developing
+                    an automated testing strategy for a multi-tier mobile application</a>
+                  <div class="description">End-to-end testing strategies for a webapp platform.</div>
+                </div>
+              </div>
+              <br />
+              <div class="item">
+                <i class="paint brush icon"></i>
+                <div class="content">
+                  <a class="header" href="https://www.researchgate.net/profile/Lawrence_Leung/publication/235784247_Neuroimaging_in_Chronic_and_Neuropathic_Pain/links/0fcfd5137d0054cddf000000/Neuroimaging-in-Chronic-and-Neuropathic-Pain.pdf">Neuroimaging
+                    in chronic and neuropathic pain</a>
+                  <div class="description">Int J Pain. 2012</div>
+                </div>
+              </div>
+              <div class="item">
+                <i class="paint brush icon"></i>
+                <div class="content">
+                  <a class="header" href="https://www.researchgate.net/publication/275591626_Guided_by_numbers_how_far_should_we_go">Guided
+                    by numbers—how far should we go?</a>
+                  <div class="description">InnovAiT. 2013</div>
+                </div>
+              </div>
+              <div class="item">
+                <i class="paint brush icon"></i>
+                <div class="content">
+                  <a class="header" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3894036/">Hyfrecation for
+                    recalcitrant non-genital warts</a>
+                  <div class="description">J Family Med Prim Care. 2013</div>
+                </div>
+              </div>
+              <div class="item">
+                <i class="paint brush icon"></i>
+                <div class="content">
+                  <a class="header" href="https://www.researchgate.net/publication/259986975_Recurrent_Hydrocoele">Recurrent
+                    Hydrocoele</a>
+                  <div class="description">J Family Med Prim Care. 2013</div>
+                </div>
+              </div>
+              <div class="item">
+                <i class="paint brush icon"></i>
+                <div class="content">
+                  <a class="header" href="https://www.researchgate.net/publication/230792540_From_ladder_to_platform_a_new_concept_for_pain_management">From
+                    ladder to platform: a new concept for pain management</a>
+                  <div class="description">J Prim Health Care. 2012</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact" class="ui inverted vertical footer segment">
+      <div class="ui container">
+        <div class="ui stackable inverted divided equal height stackable grid">
+          <div class="three wide column">
+            <h4 class="ui inverted header">
+              Arthur Leung 2018
+            </h4>
+          </div>
+          <div class="thirteen wide column">
+            <h4 class="ui inverted header">
+              Contact
+            </h4>
+            <div class="ui inverted link list">
+              <a class="item" href="mailto:arcyleung@gmail.com?Subject=Let's%20talk"> arcyleung@gmail.com</a>
+              <a class="item" href="https://github.com/arcyleung"><i class="github icon"></i>GitHub</a>
+              <a class="item" href="https://twitter.com/arcyleung"><i class="twitter icon"></i>Twitter</a>
+              <a class="item" href="https://www.linkedin.com/in/arcyleung/"><i class="linkedin icon"></i>LinkedIn</a>
+              <a class="item" href="https://arcyleung.wordpress.com/"><i class="wordpress icon"></i>Personal Blog</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../static/dist/semantic-ui/semantic.min.js"></script>
 
-        const el = document.querySelector('.text')
-        const fx = new TextScramble(el)
+  <style type="text/css">
+    .hidden.menu {
+      display: none;
+    }
 
-        let counter = 0
-        const next = () => {
-            fx.setText(phrases[counter]).then(() => {
-                setTimeout(next, 900)
-            })
-            counter = (counter + 1) % phrases.length
-        }
+    .masthead.segment {
+      min-height: 550px !important;
+      padding: 1em 0em;
+      background-image: url("./img/ux.jpg") !important;
+      background-size: cover !important;
+    }
 
-        next()
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script>
-        $('.sectionLink').click(function () {
-            var body = $("html, body");
-            var dest = $(this).attr("href");
-            body.animate({ scrollTop: $(dest).offset().top }, 1200, 'easeInOutCirc', function () {
-            });
-        });
-    </script>
-        <script>
-                $('.topLink').click(function () {
-                    currentPos = 0;
-                    var body = $("html, body");
-                    var dest = $(this).attr("href");
-                    body.animate({ scrollTop: $(dest).offset().top }, 1200, 'easeInOutCirc', function () {
-                    });
-                });
-            </script>
-    <script>
+    .highlight-span {
+      background-color: rgba(0, 0, 0, 0.75);
+      color: #fff;
+      font-weight: 400;
+      line-height: 1.25;
+      padding: 0 4px;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+    }
 
-var sections = ['#Intro', '#Projects', '#Experience','#Contact'];
-var currentPos = 0;
-    function scrollListen ($pos) {
-console.log($pos);
-  $(window).on('scroll', function(){
-    $(window).off('scroll');
+    .masthead .logo.item img {
+      margin-right: 1em;
+    }
 
-    let origin = $(window).scrollTop();
-    let delta = 0;
+    .masthead .ui.menu .ui.button {
+      margin-left: 0.5em;
+    }
 
-    $(window).on('scroll', () => {
-      delta = origin - $(window).scrollTop();
+    .masthead h1.ui.header {
+      margin-top: 2em;
+      margin-bottom: 0em;
+      font-size: 4em;
+      font-weight: normal;
+    }
 
-      if(Math.abs(delta) > 25){
-        $(window).off('scroll');
+    .masthead h2 {
+      font-size: 1.7em;
+      font-weight: normal;
+    }
 
-        if(delta < 0 && sections[currentPos + 1]){
-          currentPos++;
+    .ui.vertical.stripe {
+      padding: 8em 0em;
+    }
 
-          setTimeout(function() {
-            $('html, body').animate({scrollTop: $(sections[currentPos]).offset().top}, 500, function() {
-              scrollListen();
-            });
-          }, 500);
+    .ui.vertical.stripe h3 {
+      font-size: 2em;
+    }
 
-        }else if(delta > 0 && sections[currentPos - 1]){
-          currentPos--;
+    .ui.vertical.stripe .button+h3,
+    .ui.vertical.stripe p+h3 {
+      margin-top: 3em;
+    }
 
-          setTimeout(function() {
-            $('html, body').animate({scrollTop: $(sections[currentPos]).offset().top}, 500, function() {
+    .ui.vertical.stripe .floated.image {
+      clear: both;
+    }
 
-              scrollListen();
-            });
-          }, 500);
-        }
+    .ui.vertical.stripe p {
+      font-size: 1.33em;
+    }
+
+    .ui.vertical.stripe .horizontal.divider {
+      margin: 3em 0em;
+    }
+
+    .quote.stripe.segment {
+      padding: 0em;
+    }
+
+    .footer.segment {
+      padding: 5em 0em;
+    }
+
+    .navigation {
+      border: none;
+      vertical-align: center;
+    }
+
+    .secondary.pointing.menu {
+      border: none !important;
+      background-color: rgba(255, 255, 255, 0.75);
+      /* justify-content: center; */
+    }
+
+    .secondary.pointing.menu .toc.item {
+      display: none;
+    }
+
+    .secondary.pointing.menu.item {
+      justify-content: center;
+
+    }
+
+    a {
+      outline: 0;
+    }
+
+    .collage-image {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+      padding-left: 0.5em !important;
+      padding-right: 0.5em !important;
+      height: 120% !important;
+    }
+
+    .post-frame {
+      height: 300px;
+      overflow: hidden;
+      object-fit: cover;
+    }
+
+    .post-image {
+      height: 100% !important;
+      object-fit: cover;
+    }
+
+    @media only screen and (max-width: 700px) {
+
+      .navigation {
+        background-color: transparent !important;
       }
-    });
-  });
-}
-    $(function() {
-  $('.window').css({
-    'height': window.innerHeight,
-  });
 
-  $(window).resize(() => {
-    $('.window').css({
-      'height': window.innerHeight,
-    });
-  });
+      .secondary.pointing.menu {
+        justify-content: left;
+      }
 
-  scrollListen(currentPos);
+      .secondary.pointing.menu .item,
+      .secondary.pointing.menu .menu {
+        display: none;
+      }
 
-});
+      .secondary.pointing.menu .toc.item {
+        display: block;
+      }
 
-</script>
+      /* .masthead.segment {
+        min-height: 350px;
+      } */
+
+      .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+      }
+
+      .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+      }
+    }
+  </style>
+  <script>
+    $(document)
+      .ready(function () {
+        // create sidebar and attach to menu open
+        $('.ui.sidebar')
+          .sidebar('attach events', '.toc.item')
+          ;
+
+        $('.ui.sticky')
+          .sticky({
+            context: '#site-content'
+          })
+          ;
+
+        $('.posts .image').dimmer({
+          on: 'hover'
+        });
+      })
+      ;
+  </script>
+
 </body>
 
 </html>
